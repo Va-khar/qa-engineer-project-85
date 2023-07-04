@@ -6,9 +6,9 @@
     Открыта страница регистрации https://codebattle.hexlet.io/users/new?locale=en&next=%2F
   test-data: |
     Тестовые данные:
-    Логин = Arkhip
-    Email = arkhip97@yandex.ru
-    Пароль = 1234567890
+    Логин: testhexlet
+    Email: testarkhip@yandex.ru
+    Пароль: testpassword
   steps:
     - Вводим логин в поле Nickname
     - Вводим e-mail в поле Email
@@ -19,16 +19,19 @@
     Пользователь успешно зарегистрировался 
 
 - summary: |
-    Проверка входа пользователя с несуществующими логином и паролем
+    Успешная проверка входа пользователя с существующим логином и паролем 
   requirement: |
-    При неправильном логине или пароле пользователь должен получить сообщение об ошибке
+    При вводе корректных данных происходит успешный вход 
   prerequisites:
-    Открыта страница логина
+    Открыта страница входа https://codebattle.hexlet.io/session/new?locale=en&next=%2F
   test-data: |
-    Логин = Логин = hexlet Пароль = badpass
+    Тестовые днные:
+    Логин: testhexlet
+    Email: testarkhip97@yandex.ru
+    Пароль: testpassword
   steps:
-    - Вводим логин
-    - Вводим пароль
-    - Нажимаем кнопку «Войти»
+    - Вводим e-mail в поле Email
+    - Вводим пароль в поле password
+    - Нажимаем на кнопку "Submit"
   expected-result: |
-    Пользователь должен попасть на главную страницу
+    Пользователь успешно авторизируется на сайте CodeBattle
