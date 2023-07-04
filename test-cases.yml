@@ -48,11 +48,23 @@
   steps: 
     - Нажать на кнопку "Sign in with Github" 
     - Открывается страница для привзяки GitHub
-    - Водим данные аккаунта GitHub
-  expected-result:|
+    - Вводим данные аккаунта GitHub
+  expected-result: |
     Пользователь успешно авторизируется на сайте CodeBattle
 
 - summary |
     Успешная авторизация пользователя через Discord
   requirement: |
+    При нажатии на кнопку "Sign in with Discord" происходит успешная авторизация
+  prerequisutes: |
+    Открыта страница авторизации https://codebattle.hexlet.io/session/new?locale=en&next=%2F
+  test-data: |
+    Тестовые данные:
+    Аккаунт на https://discord.com/
+  steps:
+    - Нажать на кнопку "Sign in with Discord"
+    - Открывается страница для привязки Discord
+    - Вводим данные аккаунта Discord
+  expected-result: |
+    Пользователь успешно авторизируется на сайте CodeBattle
   
