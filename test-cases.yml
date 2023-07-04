@@ -6,14 +6,14 @@
     Открыта страница регистрации https://codebattle.hexlet.io/users/new?locale=en&next=%2F
   test-data: |
     Тестовые данные:
-    Логин: testhexlet
+    Никнейм: testhexlet
     Email: testarkhip@yandex.ru
     Пароль: testpassword
   steps:
-    - Вводим логин в поле Nickname
+    - Вводим никнейм в поле Nickname
     - Вводим e-mail в поле Email
-    - Вводим пароль в первое поле password
-    - Вводим пароль во второе поле password
+    - Вводим пароль в первое поле Password
+    - Вводим пароль во второе поле Password
     - Нажимаем на кнопку "Submit"
   expected-result: |
     Пользователь успешно зарегистрировался 
@@ -26,12 +26,12 @@
     Открыта страница авторизации https://codebattle.hexlet.io/session/new?locale=en&next=%2F
   test-data: |
     Тестовые данные:
-    Логин: testhexlet
+    Никнейм: testhexlet
     Email: testarkhip97@yandex.ru
     Пароль: testpassword
   steps:
     - Вводим e-mail в поле Email
-    - Вводим пароль в поле password
+    - Вводим пароль в поле Password
     - Нажимаем на кнопку "Submit"
   expected-result: |
     Пользователь успешно авторизируется на сайте CodeBattle
@@ -67,4 +67,21 @@
     - Вводим данные аккаунта Discord
   expected-result: |
     Пользователь успешно авторизируется на сайте CodeBattle
+
+- summary: |
+    Авторизация с несуществующим e-mail и паролем
+  requirement: |
+    При вводе несуществующих данных, пользоваель не авторизируется 
+  prerequisutes: |
+    Открыта страница авторизации https://codebattle.hexlet.io/session/new?locale=en&next=%2F
+  test-data: |
+    Тестовые данные:
+    e-mail: failtest@yandex.ru
+    Пароль: failpassword
+  steps: 
+    - Вводим e-mail в поле Email
+    - Вводим пароль в поле Password
+    - Нажимаем на кнопку "Submit"
+  expected-result: |
+    Пользователь не авторизируется
   
