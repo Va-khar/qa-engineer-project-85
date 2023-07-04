@@ -19,13 +19,13 @@
     Пользователь успешно зарегистрировался 
 
 - summary: |
-    Успешная проверка входа пользователя с существующим логином и паролем 
+    Успешная авторизация пользователя  
   requirement: |
     При вводе корректных данных происходит успешный вход 
-  prerequisites:
-    Открыта страница входа https://codebattle.hexlet.io/session/new?locale=en&next=%2F
+  prerequisites: |
+    Открыта страница авторизации https://codebattle.hexlet.io/session/new?locale=en&next=%2F
   test-data: |
-    Тестовые днные:
+    Тестовые данные:
     Логин: testhexlet
     Email: testarkhip97@yandex.ru
     Пароль: testpassword
@@ -35,3 +35,24 @@
     - Нажимаем на кнопку "Submit"
   expected-result: |
     Пользователь успешно авторизируется на сайте CodeBattle
+
+- summary: |
+    Успешная авторизация пользователя через GitHub
+  requirement: |
+    При нажатии на кнопку "Sign in with Github" происходит успешная авторизация
+  prerequisutes: |
+    Открыта страница авторизации https://codebattle.hexlet.io/session/new?locale=en&next=%2F
+  test-data: |
+    Тестовые данные:
+    Аккаунт на https://github.com/
+  steps: 
+    - Нажать на кнопку "Sign in with Github" 
+    - Открывается страница для привзяки GitHub
+    - Водим данные аккаунта GitHub
+  expected-result:|
+    Пользователь успешно авторизируется на сайте CodeBattle
+
+- summary |
+    Успешная авторизация пользователя через Discord
+  requirement: |
+  
