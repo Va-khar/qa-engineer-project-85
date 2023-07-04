@@ -52,7 +52,7 @@
   expected-result: | 
     Пользователь успешно авторизируется на сайте CodeBattle
 
-- summary |
+- summary: |
     Успешная авторизация пользователя через Discord
   requirement: |
     При нажатии на кнопку "Sign in with Discord" происходит успешная авторизация
