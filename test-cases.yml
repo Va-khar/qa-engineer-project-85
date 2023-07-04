@@ -47,9 +47,9 @@
     Аккаунт на https://github.com/
   steps: 
     - Нажать на кнопку "Sign in with Github" 
-    - Открывается страница для привзяки GitHub
+    - Открывается страница для привязки GitHub
     - Вводим данные аккаунта GitHub
-  expected-result: |
+  expected-result: | 
     Пользователь успешно авторизируется на сайте CodeBattle
 
 - summary |
