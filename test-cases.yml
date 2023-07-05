@@ -19,6 +19,35 @@
     Пользователь успешно зарегистрировался 
 
 - summary: |
+    Регистрация с пустыми полями
+  requirement: |
+    При нажатии на кнопку "Submit" появляется предупреждение
+  prerequsites: |
+    Открыта страница регистрации https://codebattle.hexlet.io/users/new?locale=en&next=%2F
+  test-data: |
+    Тестовые данные:
+    Данных нет
+  steps: 
+    - Нажимаем на кнопку "Submit"
+  expected-result: |
+    Под каждым полем появиться соответствующий предупреждение ".... required"
+
+- summary: |
+    Регистрация никнейма с использованием нелатинских символов
+  requirement: |
+    При вводе нелатинских символов, под полем Nickname появляется предупреждение 
+  prerequisites: |
+    Открыта страница регистрации https://codebattle.hexlet.io/users/new?locale=en&next=%2F
+  test-data: |
+    Тестовые данные:
+    Никнейм: тестхекслет
+  steps:
+    - Вводим никнейм в поле Nickname
+    - Нажимаем на кнопку "Submit"
+  expected-result: |
+    Под полем Nickname появляется предупреждение "Can contain letters, numbers and underscores and should begin with a Latin letter"
+    
+- summary: |
     Успешная авторизация пользователя  
   requirement: |
     При вводе корректных данных происходит успешный вход 
@@ -84,4 +113,7 @@
     - Нажимаем на кнопку "Submit"
   expected-result: |
     Пользователь не авторизируется
+
+- summary: |
+    А
   
