@@ -6,7 +6,7 @@
     Открыта страница регистрации https://codebattle.hexlet.io/users/new?locale=en&next=%2F
   test-data: |
     Тестовые данные:
-    Никнейм: testhexlet
+    Никнейм: testarkhip
     Email: testarkhip@yandex.ru
     Пароль: testpassword
   steps:
@@ -46,6 +46,67 @@
     - Нажимаем на кнопку "Submit"
   expected-result: |
     Под полем Nickname появляется предупреждение "Can contain letters, numbers and underscores and should begin with a Latin letter"
+
+- summary: | 
+    Во время регистрации в поле Nickname меньше 3 символов 
+  requisites: |
+    Вводим не больше 2 символов в поле Nickname
+  prerequisites: |
+    Открыта страница регистрации https://codebattle.hexlet.io/users/new?locale=en&next=%2F
+  test-data: |
+    Тестовых данных нет
+  steps:
+    - Вводим 2 символа в поле Nickname
+    - Нажимаем на кнопку "Submit"
+  expected-result: |
+    Под полем Nickname появляется предупреждение "Should be from 3 to 16 characters"
+
+- summary: |
+    Во время регистрации в поле Nickname больше 16 символов
+  requisites: |
+    Вводим не меньше 17 символов в поле Nickname
+  prerequisites: |
+    Открыта страница регистрации https://codebattle.hexlet.io/users/new?locale=en&next=%2F
+  test-data: |
+    Тестовых данных нет
+  steps:
+    - Вводим 16 символов в поле Nickname
+    - Нажимем на кнопку "Submit"
+  expected-result: |
+    Под полем Nickname появляется предупреждение "Should be from 3 to 16 characters"
+    
+- summary: |
+    Регистрация существующего никнейма 
+  requirement: |
+    При вводе существующего никнейма выводится предупреждение 
+  prerequisites: |
+    Открыта страница регистрации https://codebattle.hexlet.io/users/new?locale=en&next=%2F
+  test-data: |
+    Тестовые данные:
+    Никнейм: testarkhip
+  steps:
+    - Вводим никнейм в поле Nickname
+    - Нажимаем на кнопку "Submit"
+  expected-result: |
+    Под полем Nickname появляется предупреждение "Nickname is already taken"
+
+- summary: |
+    Регистрация некорректного e-mail
+  requirement: |
+    При вводе некорректного e-mail выводится предупреждение
+  prerequisites: |
+    Открыта страница регистрации https://codebattle.hexlet.io/users/new?locale=en&next=%2F
+  test-data: |
+    Тестовые данные:
+    Любая комбинация, которая не соответствует корректному e-mail
+  steps: 
+    - Вводим в поле Email любой некорректный e-mail
+    - Нажимаем на кнопку "Submit"
+  expected-result: |
+    Под полем Email появляется предупреждение "Invalid email"
+
+- summary: |
+   !!!!!!!!!!! 
     
 - summary: |
     Успешная авторизация пользователя  
@@ -55,7 +116,7 @@
     Открыта страница авторизации https://codebattle.hexlet.io/session/new?locale=en&next=%2F
   test-data: |
     Тестовые данные:
-    Никнейм: testhexlet
+    Никнейм: testarkhip
     Email: testarkhip97@yandex.ru
     Пароль: testpassword
   steps:
