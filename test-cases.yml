@@ -50,7 +50,7 @@
 - summary: | 
     Во время регистрации в поле Nickname меньше 3 символов 
   requisites: |
-    Вводим не больше 2 символов в поле Nickname
+    Вводим не больше 2 символов в поле Nickname, появляется предупреждение
   prerequisites: |
     Открыта страница регистрации https://codebattle.hexlet.io/users/new?locale=en&next=%2F
   test-data: |
@@ -64,13 +64,13 @@
 - summary: |
     Во время регистрации в поле Nickname больше 16 символов
   requisites: |
-    Вводим не меньше 17 символов в поле Nickname
+    Вводим не меньше 17 символов в поле Nickname, появляется предупреждение
   prerequisites: |
     Открыта страница регистрации https://codebattle.hexlet.io/users/new?locale=en&next=%2F
   test-data: |
     Тестовых данных нет
   steps:
-    - Вводим 16 символов в поле Nickname
+    - Вводим 17 символов в поле Nickname
     - Нажимем на кнопку "Submit"
   expected-result: |
     Под полем Nickname появляется предупреждение "Should be from 3 to 16 characters"
@@ -106,8 +106,66 @@
     Под полем Email появляется предупреждение "Invalid email"
 
 - summary: |
-   !!!!!!!!!!! 
-    
+    Во время регистрации в первое поле Password вводим меньше 6 символов
+  requirement: |
+    Вводим не больше 5 символов в первое поле Password, появляется предупреждение
+  prerequisites: |
+    Открыта страница регистрации https://codebattle.hexlet.io/users/new?locale=en&next=%2F
+  test-data: |
+    Тестовых данных нет
+  steps:
+    - Вводим 5 символов в первое поле Password
+    - Нажимаем на кнопку "Submit"
+  expected-result: |
+    Под первым полем Password появляется предупреждение "Should be from 6 to 16 characters"
+
+- summary: |
+    Во время регистрации в первое поле Password вводим больше 16 символов
+  requirement: |
+    Вводим не меньше 17 символов в первое поле Password, появляется предупреждение
+  prerequisites: |
+    Открыта страница регистрации https://codebattle.hexlet.io/users/new?locale=en&next=%2F
+  test-data: |
+    Тестовых данных нет
+  steps: 
+    - Вводим 17 символов в первое поле Password
+    - Нажимаем на кнопку "Submit"
+  expected-result: |
+    Под первым полем Password появляется предупреждение "Should be from 6 to 16 characters"
+
+- summary: |
+    Успешная проверка поля Password, во время регистрации
+  requirement: |
+    Второе поле Password проверяет на точность первое поле Password
+  prerequisites: |
+    Открыта страница регистрации https://codebattle.hexlet.io/users/new?locale=en&next=%2F
+  test-data: |
+    1 Пароль: testpassword
+    2 Пароль: testpassword
+  steps:
+    - Вводим 1 пароль в первое поле Password
+    - Вводим 2 пароль во второе поле Password
+    - Нажимаем на кнопку "Submit"
+  expected-result: |
+    Предупреждение "Passwords must match" не появляется, регистрация успешна
+
+- summary: |
+    Выявление на несоответствие пароля, во время регистрации
+  requirement: |
+    При нахождении неточности в пароле, появляется предупреждение
+  prerequisites: |
+    Открыта страница регистрации https://codebattle.hexlet.io/users/new?locale=en&next=%2F
+  test-data: |
+    Тествые данные:
+    1 Пароль: testpassword
+    2 Пароль: failpassword
+  steps:
+    - Вводим 1 пароль в первое поле Password
+    - Вводим 2 пароль во второе поле Password
+    - Нажимаем на кнопку "Submit"
+  expected-result: |
+    Под вторым полем Password появляется предупреждение "Passwords must match" 
+
 - summary: |
     Успешная авторизация пользователя  
   requirement: |
