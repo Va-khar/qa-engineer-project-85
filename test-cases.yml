@@ -327,6 +327,114 @@
     - Вводим тестовые данные 
   expected-result: |
     Пользователь авторизировался, пароль успено восстановлен
+
+- summary: |
+    Переход между вкладками лобби, турнирами и завершёнами играми 
+  requirement: |
+    Свободно перемещаться между вкладками лобби, турнирами и завершёнами играми одним кликом
+  prerequisites: |
+    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
+  test-data: |
+    Тестовых данных нет
+  steps:
+    - Нажимаем на вкладку Tournaments
+    - Нажимаем на вкладку Completed games
+    - Нажимаем на вкладку lobby
+  expected-result: |
+    Свободно перемещаемся между вкладками
+
+- summary: |
+    Во вкладке лобби предоставлена информация о статусе игры 
+  requirement: |
+    В данной вкладке указаны статусы: Level, State, Players, Actions 
+  prerequisites: |
+    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
+  test-data: |
+    Тестовых данных нет
+  steps:
+    - Смотрим на вкладку 
+  expected-result: |
+    Вся информация о игре в статусах предоставлена 
+
+- summary: |
+    Статус Level указывает уровень сложности игры
+  requirement: |
+    В лобби, в статусе Level указан один из четырёх уровень сложности игры
+  prerequisites: |
+    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
+  test-data: |
+    Тестовых данных нет
+  steps:
+    - Смотрим на статус Level
+  expected-result: |
+    Указан уровень сложности игры
+
+- summary: |
+    Статус State указывает статус игрока в игре 
+  requirement: |
+    В лобби, статусе State указано, в каком состоянии сам игрок
+  prerequisites: |
+    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
+  test-data: |
+    Тестовых данных нет
+  steps:
+    - Смотрим на статус State
+  expected-result: |
+    Указан статус игрока
+
+- summary: |
+    Статус Players указывает имя игрока
+  requirement: |
+    В лобби, статусе Players указано имя игрока 
+  prerequisites: |
+    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby 
+  test-data: |
+    Тестовых данных нет
+  steps: 
+    - Смотрим статус Players
+  expected-result: |
+    Указано имя игрока 
+
+- summary: |
+    Статус Actions указывает состояние игры
+  requirement: |
+    В лобби, статус Actions указывает на состояние игры
+  prerequisites: |
+    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
+  test-data: |
+    Тестовых данных нет
+  steps: 
+    - Смотрим статус Actions
+  expected-result: |
+    Видим статус игры
+
+- summary: |
+    Через статус Players можно попасть в профиль игрока
+  requirement: |
+    Кликая на имя игрока можно попасть на профиль игрока
+  prerequisites: |
+    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
+  test-data: |
+    Тестовых данных нет
+  steps:
+    - Нажимаем на имя
+    - Проваливаемся в профиль игрока
+  expected-result: |
+    Находимся в профиле игрока
+
+- summary: |
+    Через статус Actions можно присоединиться к игре
+  requirement: |
+    Нажимая на кнопку в статусе Actions, происходит присоединение к игре
+  prerequisites: |
+    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
+  test-data: |
+    Тестовых данных нет
+  steps:
+    - Нажимаем на кнопку в статусе Actions
+    - Присоединяемся к игре 
+  expected-result: |
+    Игрок в игре
     
     
   
