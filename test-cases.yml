@@ -741,7 +741,30 @@
   requirement: |
     В Completed games, в статусе Actions находится кнопка. Через неё можно открыть запись завершенной игры
   prerequisites: |
-     
+    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#completedGames
+  test-data: |
+    Тестовых данных нет
+  steps:
+    - Смотрим на страницу
+    - Нажимаем на кнопку "Show"
+    - Переходим в запись выбранной игры
+  expected-result: |
+    Смотрим запись выбранной игры 
+
+- summary: |
+    Создание игры 
+  requirement: |
+    Нажимая на кнопку "CREATE A GAME" появляется окно настойки создаваемой игры. После нажимаем кнопку "Create Battle" игра создаётся
+  prerequisites: |
+    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
+  test-data: |
+    Тестовых данных нет
+  steps: 
+    - Нажимаем на кнопку "CREATE A GAME"
+    - Оставляем настройки по умолчанию 
+    - Нажимаем на кнопку "Create Battle"
+  expected-result: |
+    Игра создана, в Lobby, появится строчка с игрой
   
 
 
