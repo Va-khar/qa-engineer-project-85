@@ -476,6 +476,90 @@
     Под заголовком "Completed tournaments" указаны статусы завершённых турниров
 
 - summary: |
+    Статус Title, указывает название завершенного турнира
+  requirement: |
+    Во вкладке Tournaments, под заголовком "Completed tournaments", статус Title указывает название завершенного турнира
+  prerequirement: |
+    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#tournaments
+  test-data" |
+    Тетовых данных нет
+  steps: 
+    - Смотрим на страницу
+    - Смотрим на статус Title
+  expected-result: |
+    Видим название завершенного турнира
+
+- summary: |
+    Статус Type, указывает на тип завершенного турнира
+  requirement: |
+    Во вкладке Tournaments, под заголовком "Completed tournaments", статус Type указывает на тип соревнования завершенного турнира
+  prerequirement: |
+    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#tournaments
+  test-data" |
+    Тетовых данных нет
+  steps: 
+    - Смотрим на страницу
+    - Смотрим на статус Type
+  expected-result: |
+    Видим тип завершенного турнира
+
+- summary: |
+    Статус Starts_at, указывает дату начала завершенного турнира
+  requirement: |
+    Во вкладке Tournaments, под заголовком "Completed tournaments", статус Starts_at указывает дату начала завершенного турнира
+  prerequirement: |
+    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#tournaments
+  test-data" |
+    Тетовых данных нет
+  steps: 
+    - Смотрим на страницу
+    - Смотрим на статус Starts_at
+  expected-result: |
+    Видим дату начала завершенного турнира
+
+- summary: |
+    Статус Creator, указывает имя создателя завершенного турнира
+  requirement: |
+    Во вкладке Tournaments, под заголовком "Completed tournaments", статус Creator указывает имя создателя завершенного турнира
+  prerequirement: |
+    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#tournaments
+  test-data" |
+    Тетовых данных нет
+  steps: 
+    - Смотрим на страницу
+    - Смотрим на статус Creator
+  expected-result: |
+    Видим имя создателя завершенного турнира
+
+- summary: |
+    Статус Actions, указывает в качестве кого можно присоединиться к завершенному турниру
+  requirement: |
+    Во вкладке Tournaments, под заголовком "Completed tournaments", статус Actions указывает в качестве кого можно присоединиться к завершенному турниру
+  prerequirement: |
+    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#tournaments
+  test-data" |
+    Тетовых данных нет
+  steps: 
+    - Смотрим на страницу
+    - Смотрим на статус Actions
+  expected-result: |
+    Видим в качестве кого можно присоединиться к завершенному турниру
+
+    - summary: |
+    Через статус Actions, можно открыть запись завершенного турнира 
+  requirement: |
+    Во вкладке Tournaments, под заголовком "Completed tournaments", статус Actions позволяет присоединиться к активному турниру 
+  prerequisites: |
+    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#tournaments
+  test-data: |
+    Тестовых данных нет
+  steps:
+    - Нажимаем на кнопку в статусе Action
+    - Присоединяемся к игре
+  expected-result: |
+    Игрок присоединятеься к активному турниру
+
+- summary: |
     Во вкладке Tournaments указаны активные турниры 
   requirement: |
     Во вкладке Tournaments, под заголовком "Live tournaments" указан список активных турниров
@@ -515,7 +599,7 @@
     Под заголовком "Live tournaments" указаны статусы активных турниров
 
 - summary: |
-    Статус Title, указывает название турнира
+    Статус Title, указывает название активного турнира
   requirement: |
     Во вкладке Tournaments, под заголовком "Live tournaments", статус Title указывает название активного турнира
   prerequisites: |
@@ -529,7 +613,7 @@
     В статусе Title указано название активного турнира
 
 - summary: |
-    Статус Starts_at, указывает дату начала турнира
+    Статус Starts_at, указывает дату начала активного турнира
   requirement: |
     Во вкладке Tournaments, под заголовком "Live tournaments", статус Starts_at указывает дату начала активного турнира
   prerequisites: |
@@ -543,7 +627,7 @@
     В статусе Starts_at указана дата начала активного турнира
 
 - summary: |
-    Статус Creator, указывает имя создателя турнира
+    Статус Creator, указывает имя создателя активного турнира
   requirement: |
     Во вкладке Tournaments, под заголовком "Live tournaments", статус Creator указывает имя создателя активного турнира
   prerequisites: |
@@ -557,9 +641,9 @@
     В статусе Creator указано имя создателя турнира
 
 - summary: |
-    Статус Actions, указывает на состояние турнира
+    Статус Actions, указывает в качестве кого можно присоединиться к активному турниру
   requirement: |
-    Во вкладке Tournaments, под заголовком "Live tournaments", статус Actions указывает на состояние активного турнира
+    Во вкладке Tournaments, под заголовком "Live tournaments", статус Actions указывает в качестве кого можно присоединиться к активному турниру
   prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#tournaments
   test-data: |
@@ -568,10 +652,10 @@
     - Смотрим на страницу
     - Смотрим на статус Actions
   expected-result: |
-    Видим состояние активного турнира 
+    Видим в качестве кого можно присоединиться к активному турниру 
 
 - summary: |
-    Через статус Actions, можно присоединиться к турниру 
+    Через статус Actions, можно присоединиться к активному турниру 
   requirement: |
     Во вкладке Tournaments, под заголовком "Live tournaments", статус Actions позволяет присоединиться к активному турниру 
   prerequisites: |
@@ -582,7 +666,7 @@
     - Нажимаем на кнопку в статусе Action
     - Присоединяемся к игре
   expected-result: |
-    Игрок в игре 
+    Игрок присоединятеься к активному турниру  
 
-- summary: |
+
     
