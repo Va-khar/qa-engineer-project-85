@@ -476,7 +476,7 @@
     Под заголовком "Completed tournaments" указаны статусы завершённых турниров
 
 - summary: |
-    Статус Title, указывает название завершенного турнира
+    Статус Title указывает название завершенного турнира
   requirement: |
     Во вкладке Tournaments, под заголовком "Completed tournaments", статус Title указывает название завершенного турнира
   prerequirement: |
@@ -490,7 +490,7 @@
     Видим название завершенного турнира
 
 - summary: |
-    Статус Type, указывает на тип завершенного турнира
+    Статус Type указывает на тип завершенного турнира
   requirement: |
     Во вкладке Tournaments, под заголовком "Completed tournaments", статус Type указывает на тип соревнования завершенного турнира
   prerequirement: |
@@ -504,7 +504,7 @@
     Видим тип завершенного турнира
 
 - summary: |
-    Статус Starts_at, указывает дату начала завершенного турнира
+    Статус Starts_at указывает дату начала завершенного турнира
   requirement: |
     Во вкладке Tournaments, под заголовком "Completed tournaments", статус Starts_at указывает дату начала завершенного турнира
   prerequirement: |
@@ -518,7 +518,7 @@
     Видим дату начала завершенного турнира
 
 - summary: |
-    Статус Creator, указывает имя создателя завершенного турнира
+    Статус Creator указывает имя создателя завершенного турнира
   requirement: |
     Во вкладке Tournaments, под заголовком "Completed tournaments", статус Creator указывает имя создателя завершенного турнира
   prerequirement: |
@@ -532,7 +532,7 @@
     Видим имя создателя завершенного турнира
 
 - summary: |
-    Статус Actions, указывает в качестве кого можно присоединиться к завершенному турниру
+    Статус Actions указывает, в качестве кого можно присоединиться к завершенному турниру
   requirement: |
     Во вкладке Tournaments, под заголовком "Completed tournaments", статус Actions указывает в качестве кого можно присоединиться к завершенному турниру
   prerequirement: |
@@ -546,7 +546,7 @@
     Видим в качестве кого можно присоединиться к завершенному турниру
 
     - summary: |
-    Через статус Actions, можно открыть запись завершенного турнира 
+    Через статус Actions можно открыть запись завершенного турнира 
   requirement: |
     Во вкладке Tournaments, под заголовком "Completed tournaments", статус Actions позволяет присоединиться к активному турниру 
   prerequisites: |
@@ -599,7 +599,7 @@
     Под заголовком "Live tournaments" указаны статусы активных турниров
 
 - summary: |
-    Статус Title, указывает название активного турнира
+    Статус Title указывает название активного турнира
   requirement: |
     Во вкладке Tournaments, под заголовком "Live tournaments", статус Title указывает название активного турнира
   prerequisites: |
@@ -613,7 +613,7 @@
     В статусе Title указано название активного турнира
 
 - summary: |
-    Статус Starts_at, указывает дату начала активного турнира
+    Статус Starts_at указывает дату начала активного турнира
   requirement: |
     Во вкладке Tournaments, под заголовком "Live tournaments", статус Starts_at указывает дату начала активного турнира
   prerequisites: |
@@ -627,7 +627,7 @@
     В статусе Starts_at указана дата начала активного турнира
 
 - summary: |
-    Статус Creator, указывает имя создателя активного турнира
+    Статус Creator указывает имя создателя активного турнира
   requirement: |
     Во вкладке Tournaments, под заголовком "Live tournaments", статус Creator указывает имя создателя активного турнира
   prerequisites: |
@@ -641,7 +641,7 @@
     В статусе Creator указано имя создателя турнира
 
 - summary: |
-    Статус Actions, указывает в качестве кого можно присоединиться к активному турниру
+    Статус Actions указывает, в качестве кого можно присоединиться к активному турниру
   requirement: |
     Во вкладке Tournaments, под заголовком "Live tournaments", статус Actions указывает в качестве кого можно присоединиться к активному турниру
   prerequisites: |
@@ -655,7 +655,7 @@
     Видим в качестве кого можно присоединиться к активному турниру 
 
 - summary: |
-    Через статус Actions, можно присоединиться к активному турниру 
+    Через статус Actions можно присоединиться к активному турниру 
   requirement: |
     Во вкладке Tournaments, под заголовком "Live tournaments", статус Actions позволяет присоединиться к активному турниру 
   prerequisites: |
@@ -670,7 +670,7 @@
 
 - summary: |
     Во вкладке Completed games указаны завершенные игры 
-  rquirement: |
+  requirement: |
     Во вкладке Completed games указаны записи завершенных игр
   prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#completedGames
@@ -683,7 +683,7 @@
 
 - summary: |
     Во вкладке Completed games указана информация о статусах завершенных игр
-  rquirement: |
+  requirement: |
     В Completed games указана информация о статусах: Level, Players, Date, Actions
   prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#completedGames
@@ -693,6 +693,56 @@
     - Смотрим на страницу
   expected-result: |
     Видим статусы и информацию о них
+
+- summary: |
+    Статус Level указывает на сложность завершенной игры, во вкладке Completed games 
+  requirement: |
+    В Completed games, в статусе Level указан один из четырёх уровень сложности игры
+  prerequisites: |
+    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#completedGames
+  test-data: |
+    Тестовых данных нет
+  steps:
+    - Смотрим на страницу
+    - Смотрим на статус Level
+  expected-result: |
+    Видим уровень сложности завершенной игры
+
+- summary: |
+    Статус Players указывает имена игроков, во вкладке Completed games
+  requirement: |
+    В Completed games, в статусе Players указывает имена игроков завершенной игры
+  prerequisites: |
+    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#completedGames
+  test-data: |
+    Тестовых данных нет
+  steps:
+    - Смотрим на станицу
+    - Смотрим на статус Players
+  expected-result: |
+    Видим имена игроков завершенной игры
+
+- summary: |
+    Статус Date указывает на дату завершения игры, во вкладке Completed games
+  requirement: |
+    В Completed games, в статусе Date указана дата окончания игры
+  prerequisites: |
+    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#completedGames
+  test-data: |
+    Тестовых данных нет
+  steps: 
+    - Смотрим на страницу
+    - Смотрим на статус Date
+  expected-result: |
+    Видим дату окончания игры
+
+- summary: |
+    Через статус Actions, можно открыть запись завершенной игры, во вкладке Completed games
+  requirement: |
+    В Completed games, в статусе Actions находится кнопка. Через неё можно открыть запись завершенной игры
+  prerequisites: |
+     
+  
 
 
     
