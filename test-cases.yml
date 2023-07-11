@@ -754,7 +754,7 @@
 - summary: |
     Создание игры 
   requirement: |
-    Нажимая на кнопку "CREATE A GAME" появляется окно настойки создаваемой игры. После нажимаем кнопку "Create Battle" игра создаётся
+    Нажимая на кнопку "CREATE A GAME" появляется окно настойки (Create a game) создаваемой игры. После нажимаем кнопку "Create Battle" игра создаётся
   prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
