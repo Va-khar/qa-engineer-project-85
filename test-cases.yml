@@ -764,7 +764,43 @@
     - Оставляем настройки по умолчанию 
     - Нажимаем на кнопку "Create Battle"
   expected-result: |
-    Игра создана, в Lobby, появится строчка с игрой
+    Игра создана, в Lobby появится строчка с вашей игрой
+
+- summary: |
+    Базовый функционал окна настройки (Create a game)
+  requirement: |
+    В окне настройки игры (Create a game) представлен базовый функционал: Level, Game Type, Time control, Choose task by name or tags
+  prerequirement: |
+    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
+  test-data: |
+    Тестовы данных нет
+  steps:
+    - Нажимаем на конпку "CREATE A GAME"
+    - Смотрим на окно настройки (Create a game)
+  expected-data: |
+    Базовый функционал представлен в окне настройки 
+
+- summary: |
+    В окне настройки игры (Create a game), функция Level позволяет выбрать уровень сложности 
+  requirement: |
+    Функция Level позволяет выбрать один из четырёх уровней сложности игры
+  prerequirement: |
+    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
+  test-data: |
+    Тестовых данных нет
+  steps:
+    - Нажимаем на кнопку "CREATE A GAME"
+    - Переходим в окно настройки
+    - Выбираем один из четырёх уровней сложности
+    - Нажимаем на кнопку "Create Battle"
+  expected-result: |
+    Создаётся игра с выбранным уровнем сложности
+
+- summary: |
+    В окне настройки игры (Create a game), функция Game Type позволяет выбрать тип игрока
+  requirement: |
+    Функция Game Type  позволяет 
+    
   
 
 
