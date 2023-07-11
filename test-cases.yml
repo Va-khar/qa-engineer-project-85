@@ -668,5 +668,31 @@
   expected-result: |
     Игрок присоединятеься к активному турниру  
 
+- summary: |
+    Во вкладке Completed games указаны завершенные игры 
+  rquirement: |
+    Во вкладке Completed games указаны записи завершенных игр
+  prerequisites: |
+    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#completedGames
+  test-data: | 
+    Тестовых данных нет
+  steps: 
+    - Смотрим на страницу
+  expected-result: |
+    Видим список завершенных игр
+
+- summary: |
+    Во вкладке Completed games указана информация о статусах завершенных игр
+  rquirement: |
+    В Completed games указана информация о статусах: Level, Players, Date, Actions
+  prerequisites: |
+    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#completedGames
+  test-data: |
+    Тестовых данных нет
+  steps:
+    - Смотрим на страницу
+  expected-result: |
+    Видим статусы и информацию о них
+
 
     
