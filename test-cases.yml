@@ -797,9 +797,38 @@
     Создаётся игра с выбранным уровнем сложности
 
 - summary: |
-    В окне настройки игры (Create a game), функция Game Type позволяет выбрать тип игрока
+    В окне настройки игры (Create a game), функция Game Type позволяет выбрать игру с ботом
   requirement: |
-    Функция Game Type  позволяет 
+    Функция Game Type  позволяет выбрать игру с ботом
+  prerequirement: |
+    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
+  test-data: |
+    Тестовых данных нет
+  steps: 
+    - Нажимаем на кнопку "CREATE A GAME"
+    - Переходим в окно настройки 
+    - Выбираем "With other users"
+    - Нажимаем на кнопку "Create Battle"
+  expected-result: |
+    Игра сразу запускается 
+
+- summary: |
+    В окне настройки игры (Create a game), функция Game Type позволяет выбрать определённого игрока
+  requirement: |
+    Функция Game Type  позволяет выбрать определённого игрока сс помощью приглашения
+  prerequirement: |
+    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
+  test-data: |
+    Тестовых данных нет
+  steps: 
+    - Нажимаем на кнопку "CREATE A GAME"
+    - Переходим в окно настройки 
+    - Выбираем "With a friend"
+    - Появляется строчка Choose opponent
+    - Выбираем игрока 
+    - Нажимаем на кнопку "Create Battle"
+  expected-result: |
+    Игра готова, ожидаем подтверждение от выбранного игрока
     
   
 
