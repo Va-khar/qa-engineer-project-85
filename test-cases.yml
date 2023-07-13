@@ -896,3 +896,39 @@
     - Нажимаем на кнопку "Create Battle"
   expected-result: |
     Переходим в саму битву и видим таймер идёт от 60 минут
+
+- summary: |
+    В окне настройки игры (Create a game), функция Choose task by name or tags позволяет выбрать задачу через name
+  requirement: |
+    Функция Choose task by name or tags позволяет выбрать определённую задачу для игры через name
+  prerequirement: |
+    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
+  test-data: |
+    Тестовых данных нет
+  steps:
+    - Нажимаем на кнопку "CREATE A GAME"
+    - Переходим в окно настройки
+    - Выбираем игру с ботом
+    - Выбираем любую задачу через первое поле в функции Choose task by name or tags
+    - Нажимаем на кнопку "Create Battle"
+  expected-result: |
+    Переходим в саму битву и видим выбранную задачу
+
+- summary: |
+    В окне настройки игры (Create a game), функция Choose task by name or tags позволяет выбрать задачу через tags
+  requirement: |
+    Функция Choose task by name or tags позволяет выбрать диапазон задач для игры через tags
+  prerequirement: |
+    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
+  test-data: |
+    Тестовых данных нет
+  steps:
+    - Нажимаем на кнопку "CREATE A GAME"
+    - Переходим в окно настройки
+    - Выбираем игру с ботом
+    - Выбираем тэги во втором поле функции Choose task by name or tags
+    - Определяется диапазон задач
+    - Выбираем любую задачу
+    - Нажимаем на кнопку "Create Battle"
+  expected-result: |
+    Переходим в саму битву и видим выбранную задачу
