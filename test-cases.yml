@@ -454,7 +454,7 @@
   requirement: |
     Во вкладке Tournaments, под заголовком "Completed tournaments" указан список завершённых турниров
   prerequisites: |
-    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#tournaments
+    Открыта страница турниров https://codebattle.hexlet.io/#tournaments
   test-data: |
     Тестовых данных нет
   steps: 
@@ -467,7 +467,7 @@
   requirement: |
     В "Completed tournaments" указана информация о статусах: Title, Type, Starts_at, Creator, Actions
   prerequisites: |
-    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#tournaments
+    Открыта страница турниров https://codebattle.hexlet.io/#tournaments
   test-data: |
     Тестовых данных нет
   steps:
@@ -480,7 +480,7 @@
   requirement: |
     Во вкладке Tournaments, под заголовком "Completed tournaments", статус Title указывает название завершенного турнира
   prerequirement: |
-    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#tournaments
+    Открыта страница турниров https://codebattle.hexlet.io/#tournaments
   test-data" |
     Тетовых данных нет
   steps: 
@@ -494,7 +494,7 @@
   requirement: |
     Во вкладке Tournaments, под заголовком "Completed tournaments", статус Type указывает на тип соревнования завершенного турнира
   prerequirement: |
-    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#tournaments
+    Открыта страница турниров https://codebattle.hexlet.io/#tournaments
   test-data" |
     Тетовых данных нет
   steps: 
@@ -508,7 +508,7 @@
   requirement: |
     Во вкладке Tournaments, под заголовком "Completed tournaments", статус Starts_at указывает дату начала завершенного турнира
   prerequirement: |
-    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#tournaments
+    Открыта страница турниров https://codebattle.hexlet.io/#tournaments
   test-data" |
     Тетовых данных нет
   steps: 
@@ -522,7 +522,7 @@
   requirement: |
     Во вкладке Tournaments, под заголовком "Completed tournaments", статус Creator указывает имя создателя завершенного турнира
   prerequirement: |
-    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#tournaments
+    Открыта страница турниров https://codebattle.hexlet.io/#tournaments
   test-data" |
     Тетовых данных нет
   steps: 
@@ -536,7 +536,7 @@
   requirement: |
     Во вкладке Tournaments, под заголовком "Completed tournaments", статус Actions указывает в качестве кого можно присоединиться к завершенному турниру
   prerequirement: |
-    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#tournaments
+    Открыта страница турниров https://codebattle.hexlet.io/#tournaments
   test-data" |
     Тетовых данных нет
   steps: 
@@ -550,7 +550,7 @@
   requirement: |
     Во вкладке Tournaments, под заголовком "Completed tournaments", статус Actions позволяет присоединиться к активному турниру 
   prerequisites: |
-    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#tournaments
+    Открыта страница турниров https://codebattle.hexlet.io/#tournaments
   test-data: |
     Тестовых данных нет
   steps:
@@ -564,7 +564,7 @@
   requirement: |
     Во вкладке Tournaments, под заголовком "Live tournaments" указан список активных турниров
   prerequisites: |
-    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#tournaments
+    Открыта страница турниров https://codebattle.hexlet.io/#tournaments
   test-data: |
     Тестовых данных нет
   steps:
@@ -577,7 +577,7 @@
   requirement: |
     Во вкладке Tournaments, под заголовком "Live tournaments" отсутствует активные турниры, когда их нет
   prerequisites: |
-    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#tournaments
+    Открыта страница турниров https://codebattle.hexlet.io/#tournaments
   test-data: |
     Тествых данных нет
   steps:
@@ -588,9 +588,9 @@
 - summary: |
     Во вкладке Tournaments, под заголовком "Live tournaments" указана информация о статусе активных турниров
   requirement: |
-    В "Live tournaments" указана информация о статусах: Title, Starts_at, Creator, Actions
+    В "Live tournaments" указана информация о статусах: Title, Type, Starts_at, Creator, Actions
   prerequisites: |
-    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#tournaments
+    Открыта страница турниров https://codebattle.hexlet.io/#tournaments
   test-data: |
     Тестовых данных нет
   steps:
@@ -603,7 +603,7 @@
   requirement: |
     Во вкладке Tournaments, под заголовком "Live tournaments", статус Title указывает название активного турнира
   prerequisites: |
-    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#tournaments
+    Открыта страница турниров https://codebattle.hexlet.io/#tournaments
   test-data: |
     Тестовых данных нет
   steps:
@@ -613,11 +613,25 @@
     В статусе Title указано название активного турнира
 
 - summary: |
+    Статус Type  указывает на формат проведения активного турнира
+  requirement: |
+    Во вкладке Tournaments, под заголовком "Live tournaments", статус Type указывает на формат проведения активного турнира
+  prerequirement: |
+    Открыта страница турниров https://codebattle.hexlet.io/#tournaments
+  test-data: |
+    Тестовых данных нет
+  steps:
+    - Смотрим на страницу
+    - Смотрим на статус Type
+  expected-result: |
+    В статусе Type указан формат активного турнира
+    
+- summary: |
     Статус Starts_at указывает дату начала активного турнира
   requirement: |
     Во вкладке Tournaments, под заголовком "Live tournaments", статус Starts_at указывает дату начала активного турнира
   prerequisites: |
-    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#tournaments
+    Открыта страница турниров https://codebattle.hexlet.io/#tournaments
   test-data: |
     Тестовых данных нет
   steps:
@@ -631,7 +645,7 @@
   requirement: |
     Во вкладке Tournaments, под заголовком "Live tournaments", статус Creator указывает имя создателя активного турнира
   prerequisites: |
-    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#tournaments
+    Открыта страница турниров https://codebattle.hexlet.io/#tournaments
   test-data: |
     Тестовых данных нет
   steps:
@@ -645,7 +659,7 @@
   requirement: |
     Во вкладке Tournaments, под заголовком "Live tournaments", статус Actions указывает в качестве кого можно присоединиться к активному турниру
   prerequisites: |
-    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#tournaments
+    Открыта страница турниров https://codebattle.hexlet.io/#tournaments
   test-data: |
     Тестовых данных нет
   steps:
@@ -659,7 +673,7 @@
   requirement: |
     Во вкладке Tournaments, под заголовком "Live tournaments", статус Actions позволяет присоединиться к активному турниру 
   prerequisites: |
-    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#tournaments
+    Открыта страница турниров https://codebattle.hexlet.io/#tournaments
   test-data: |
     Тестовых данных нет
   steps:
@@ -673,7 +687,7 @@
   requirement: |
     Во вкладке Completed games указаны записи завершенных игр
   prerequisites: |
-    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#completedGames
+    Открыта страница завершённых игр https://codebattle.hexlet.io/#completedGames
   test-data: | 
     Тестовых данных нет
   steps: 
@@ -686,7 +700,7 @@
   requirement: |
     В Completed games указана информация о статусах: Level, Players, Date, Actions
   prerequisites: |
-    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#completedGames
+    Открыта страница завершённых игр https://codebattle.hexlet.io/#completedGames
   test-data: |
     Тестовых данных нет
   steps:
@@ -699,7 +713,7 @@
   requirement: |
     В Completed games, в статусе Level указан один из четырёх уровень сложности игры
   prerequisites: |
-    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#completedGames
+    Открыта страница завершённых игр https://codebattle.hexlet.io/#completedGames
   test-data: |
     Тестовых данных нет
   steps:
@@ -713,7 +727,7 @@
   requirement: |
     В Completed games, в статусе Players указывает имена игроков завершенной игры
   prerequisites: |
-    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#completedGames
+    Открыта страница завершённых игр https://codebattle.hexlet.io/#completedGames
   test-data: |
     Тестовых данных нет
   steps:
@@ -727,7 +741,7 @@
   requirement: |
     В Completed games, в статусе Date указана дата окончания игры
   prerequisites: |
-    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#completedGames
+    Открыта страница завершённых игр https://codebattle.hexlet.io/#completedGames
   test-data: |
     Тестовых данных нет
   steps: 
@@ -741,7 +755,7 @@
   requirement: |
     В Completed games, в статусе Actions находится кнопка. Через неё можно открыть запись завершенной игры
   prerequisites: |
-    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#completedGames
+    Открыта страница завершённых игр https://codebattle.hexlet.io/#completedGames
   test-data: |
     Тестовых данных нет
   steps:
@@ -932,3 +946,15 @@
     - Нажимаем на кнопку "Create Battle"
   expected-result: |
     Переходим в саму битву и видим выбранную задачу
+
+- summary: |
+    Создание турниров 
+  requirement: |
+    Авторизованый пользователь может создовать турниры
+  prerequirement: |
+    Открытая страница турниров https://codebattle.hexlet.io/#tournaments
+  test-data: |
+    Тестовых данных нет
+  steps:
+    - Нажимаем на "Tournaments Info"
+    - Оставляем условия турнира по умолчанию 
