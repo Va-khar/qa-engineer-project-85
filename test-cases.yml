@@ -1033,9 +1033,19 @@
     - Нажимаем на MONTH в таблице LEADERBOAD
     - Нажимаем на ALL в таблице LEADERBOAD
     - Нажимаем на WEEK В таблице LEADRBOAD
-  expectd-result: |
+  expected-result: |
     Свободно перемещаемся между разными версиями таблицы
 
-    
-
-
+- summary: |
+    Через LEADERBOAD можно попасть на профиль игрока
+  requirement: | 
+    Кликая на имя иргока в LEADERBOAD, перемещаешься в профиль игрока
+  prerequirement: |
+    Открыта страница аворизованого пользователя https://codebattle.hexlet.io/#lobby
+  test-data: |
+    Тествых данных нет
+  steps: 
+    - Смотрим на страницу
+    - Нажимаем на любое имя
+  expected-result: |
+    Поподаем на профиль выбраноного игрока 
