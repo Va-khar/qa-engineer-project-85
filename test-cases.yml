@@ -1084,7 +1084,7 @@
   requirement: |   
     В LEADERBOAD указаны набраные очки за все время у каждого пользователя  
   prerequirement: |
-    Открыта страница аворизованого пользователя https://codebattle.hexlet.io/#lobby
+    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
   steps:
@@ -1099,7 +1099,7 @@
   requirement: |
     Нажав на "TOP list" в таблице LEADERBOAD, пользоваель перейдёт на страницу "Users rating"
   prerequirement: |
-    Открыта страница аворизованого пользователя https://codebattle.hexlet.io/#lobby
+    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
   steps:
@@ -1113,7 +1113,7 @@
   requirement: |
     Нажимая на имя пользователя в правом верхнем углу, открывается окно, где есть кнопка My Profile для перехода на страницу профиля
   prerequirement: |
-    Открыта страница аворизованого пользователя https://codebattle.hexlet.io/#lobby
+    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
   steps: 
@@ -1129,7 +1129,7 @@
   requirement: |
     Нажимая на имя пользователя в правом верхнем углу, открывается окно, где есть кнопка Settings для перехода на страницу настройки сайта
   prerequirement: |
-    Открыта страница аворизованого пользователя https://codebattle.hexlet.io/#lobby
+    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
   steps: 
@@ -1145,7 +1145,7 @@
   requirement: |
     Нажимая на имя пользователя в правом верхнем углу, открывается окно, где есть кнопка Users rating для перехода на страницу рейтинга игроков
   prerequirement: |
-    Открыта страница аворизованого пользователя https://codebattle.hexlet.io/#lobby
+    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
   steps:
@@ -1161,7 +1161,7 @@
   requirement: |
     Нажимая на имя пользователя в правом верхнем углу, открывается окно, где есть кнопка Tasks для перехода на страницу задач для игр
   prerequirement: |
-    Открыта страница аворизованого пользователя https://codebattle.hexlet.io/#lobby
+    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
   steps:
@@ -1177,7 +1177,7 @@
   requirement: |
     Нажимая на имя пользователя в правом верхнем углу, открывается окно, где есть кнопка Tournaments для перехода на страницу турниров
   prerequirement: |
-    Открыта страница аворизованого пользователя https://codebattle.hexlet.io/#lobby
+    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
   steps: 
@@ -1193,7 +1193,7 @@
   requirement: |
     Нажимая на имя пользователя в правом верхнем углу, открывается окно, где есть кнопка SourceCode для перехода на страницу Github проекта CodeBattle
   prerequirement: |
-    Открыта страница аворизованого пользователя https://codebattle.hexlet.io/#lobby
+    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
   steps: 
@@ -1209,7 +1209,7 @@
   requirement: |
     Нажимая на имя пользователя в правом верхнем углу, открывается окно, где есть кнопка Hexlet для перехода на страницу Hexlet 
   prerequirement: |
-    Открыта страница аворизованого пользователя https://codebattle.hexlet.io/#lobby
+    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
   steps: 
@@ -1225,7 +1225,7 @@
   requirement: |
     Нажимая на имя пользователя в правом верхнем углу, открывается окно, где есть кнопка Jion Discord для присоединения к Discord каналу CodeBattle
   prerequirement: |
-    Открыта страница аворизованого пользователя https://codebattle.hexlet.io/#lobby
+    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
   steps: 
@@ -1233,7 +1233,7 @@
     - Открывается окно
     - Нажимаем на Jion Discord
     - Переходим на веб-страницу авторизации Discord
-    - Авторизируемся
+    - Проходим авторизацию
   expected-result: |
     На Discord пользователя появляется канал CodeBattle
 
@@ -1242,7 +1242,7 @@
   requirement: |
     Нажимая на имя пользователя в правом верхнем углу, открывается окно, где есть кнопка Jion Discord для присоединения к Discord каналу CodeBattle
   prerequirement: |
-    Открыта страница аворизованого пользователя https://codebattle.hexlet.io/#lobby
+    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
   steps: 
@@ -1250,7 +1250,7 @@
     - Открывается окно
     - Нажимаем на Jion Discord
     - Открывается приложение Discord
-    - Авторизируемся
+    - Проходим авторизацию
   expected-result: |
     На Discord пользователя появляется канал CodeBattle
 
@@ -1259,7 +1259,7 @@
   requirement: |
     Нажимая на имя пользователя в правом верхнем углу, открывается окно, где есть кнопка Tg#codebattle для присоединения к Telegram каналу Хекслета
   prerequirement: |
-    Открыта страница аворизованого пользователя https://codebattle.hexlet.io/#lobby
+    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
   steps:
@@ -1277,7 +1277,7 @@
   requirement: |
     Нажимая на имя пользователя в правом верхнем углу, открывается окно, где есть кнопка Tg#codebattle для присоединения к Telegram каналу Хекслета
   prerequirement: |
-    Открыта страница аворизованого пользователя https://codebattle.hexlet.io/#lobby
+    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
   steps:
@@ -1295,7 +1295,7 @@
   requirement: |
     Нажимая на имя пользователя в правом верхнем углу, открывается окно, где есть кнопка Sign Out для выхода из аккаунта
   prerequiremet: |
-    Открыта страница аворизованого пользователя https://codebattle.hexlet.io/#lobby
+    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
   steps: 
@@ -1304,3 +1304,10 @@
     - Нажимаем на Sign Out 
   expected-result: |
     Пользователь вышел из под своего аккаунта
+
+- summary: |
+    Чат присутствует на главной странице
+  requirement: |
+    Чат присутствует на главной странице авторизованного пользователя
+  prerequirement: |
+    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
