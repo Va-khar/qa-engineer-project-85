@@ -1383,3 +1383,32 @@
     - Смотрим на чат
   expected-result: |
     Под "Lobby:" представлен поимённый список игроков
+
+- summary: |
+    Чат находится в режиме "General"
+  requirement: |
+    На плашке отображено "General", сама плашка находится над стеной чата
+  prerequirement: |
+    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
+  test-data: |
+    Тестовых данных нет
+  steps:
+    - Смотрим на плашку чата
+    - На плашке отображено "General"
+  expected-result: |
+    Чат в режиме "General"
+
+- summary: |
+    Чат находится в режиме "Notification"
+  requirement: |
+    На плашке отображено "Notification", сама плашка находится над стеной чата
+  prerequirement: |
+    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
+  test-data: |
+    Тестовых данных нет
+  steps:
+    - Нажимаем на плашку чата
+    - Открывается окно
+    - Выбираем "Notification"
+  expected-result: |
+    Чат в режиме "Notification"
