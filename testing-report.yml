@@ -1,1 +1,436 @@
+- summary: |
+    Успешная регистрация пользователя
+  status: pass
 
+- summary: |
+    Регистрация с пустыми полями
+  status: pass
+
+- summary: |
+    Регистрация никнейма с использованием нелатинских букв
+  status: pass
+
+- summary: | 
+    Во время регистрации в поле Nickname меньше 3 символов
+  status: pass
+
+- summary: |
+    Во время регистрации в поле Nickname больше 16 символов
+  status: pass
+
+- summary: |
+    Регистрация существующего никнейма
+  status: pass
+
+- summary: |
+    Регистрация некорректного e-mail
+  status: pass
+
+- summary: |
+    Во время регистрации в первое поле Password вводим меньше 6 символов
+  status: pass
+
+- summary: |
+    Во время регистрации в первое поле Password вводим больше 16 символов
+  status: pass
+
+- summary: |
+    Успешная проверка поля Password, во время регистрации
+  status: pass
+
+- summary: |
+    Выявление на несоответствие пароля, во время регистрации
+  status: pass
+
+- summary: |
+    Переход на страницу регистрации с главной страницы
+  status: pass
+
+- summary: |
+    Успешная авторизация пользователя
+  status: pass
+
+- summary: |
+    Успешная авторизация пользователя через GitHub
+  status: pass
+
+- summary: |
+    Успешная авторизация пользователя через Discord
+  status: pass
+
+- summary: |
+    Авторизация с несуществующим e-mail
+  status: pass
+
+- summary: |
+    Авторизация с неправильным паролем
+  status: pass
+
+- summary: |
+    Авторизация с пустыми полями
+  status: pass
+
+- summary: |
+    Переход на страницу авторизации с главной страницы
+  status: pass
+
+- summary: |
+    Начать игру без регистрации
+  status: pass
+
+- summary: |
+    Восстановление пароля от аккаунта
+  status: pass
+
+- summary: |
+    Переход между вкладками лобби, турнирами и завершеннами играми
+  status: pass
+
+- summary: |
+    Вкладки со статусами представлены в виде таблицы
+  status: pass
+
+- summary: |
+    Во вкладке Lobby предоставлена информация о статусе игр
+  status: pass
+
+- summary: |
+    Статус Level указывает уровень сложности игры
+  status: pass
+
+- summary: |
+    Статус State указывает статус игрока в игре
+  status: pass
+
+- summary: |
+    Статус Players указывает имя игрока
+  status: pass
+
+- summary: |
+    Статус Actions указывает состояние игры
+  status: pass
+
+- summary: |
+    Через статус Players можно попасть в профиль игрока
+  status: pass
+
+- summary: |
+    Через статус Actions можно присоединиться к игре
+  status: pass
+
+- summary: |
+    Во вкладке Tournaments указаны завершённые турниры
+  status: pass
+
+- summary: |
+    Во вкладке Tournaments, под заголовком "Completed tournaments" указана информация о статусе завершённых турниров
+  status: pass
+
+- summary: |
+    Статус Title указывает название завершенного турнира
+  status: pass
+
+- summary: |
+    Статус Type указывает на тип завершенного турнира
+  status: pass
+
+- summary: |
+    Статус Starts_at указывает дату начала завершенного турнира
+  status: pass
+
+- summary: |
+    Статус Creator указывает имя создателя завершенного турнира
+  status: pass
+
+- summary: |
+    Статус Actions указывает, в качестве кого можно присоединиться к завершенному турниру
+  status: pass
+
+- summary: |
+    Через статус Actions можно открыть запись завершенного турнира
+  status: pass
+
+- summary: |
+    Во вкладке Tournaments указаны активные турниры
+  status: pass
+
+- summary: |
+    Во вкладке Tournaments, под заголовком "Live tournaments" не указан список активных турниров
+  status: pass
+
+- summary: |
+    Во вкладке Tournaments, под заголовком "Live tournaments" указана информация о статусе активных турниров
+  status: pass
+
+- summary: |
+    Статус Title указывает название активного турнира
+  status: pass
+
+- summary: |
+    Статус Type  указывает на формат проведения активного турнира
+  status: pass
+
+- summary: |
+    Статус Starts_at указывает дату начала активного турнира
+  status: pass
+
+- summary: |
+    Статус Creator указывает имя создателя активного турнира
+  status: pass
+
+- summary: |
+    Статус Actions указывает, в качестве кого можно присоединиться к активному турниру
+  status: pass
+
+- summary: |
+    Через статус Actions можно присоединиться к активному турниру
+  status: pass
+
+- summary: |
+    Во вкладке Completed games указаны завершенные игры
+  status: pass
+
+- summary: |
+    Во вкладке Completed games указана информация о статусах завершенных игр
+  status: pass
+
+- summary: |
+    Статус Level указывает на сложность завершенной игры, во вкладке Completed games
+  status: pass
+
+- summary: |
+    Статус Players указывает имена игроков, во вкладке Completed games
+  status: pass
+
+- summary: |
+    Статус Date указывает на дату завершения игры, во вкладке Completed games
+  status: pass
+
+- summary: |
+    Через статус Actions, можно открыть запись завершенной игры, во вкладке Completed games
+  status: pass
+
+- summary: |
+    Создание игры
+  status: pass
+
+- summary: |
+    Базовый функционал окна настройки (Create a game)
+  status: pass
+
+- summary: |
+    В окне настройки игры (Create a game), функция Level позволяет выбрать уровень сложности
+  status: pass
+
+- summary: |
+    В окне настройки игры (Create a game), функция Game Type позволяет выбрать игру с ботом
+  status: pass
+
+- summary: |
+    В окне настройки игры (Create a game), функция Game Type позволяет выбрать определённого игрока
+  status: pass
+
+- summary: |
+    В окне настройки игры (Create a game), функция Game Type позволяет выбрать игру со случайным игроком
+  status: pass
+
+- summary: |
+    В окне настройки игры (Create a game), функция Time control позволяет поставить таймер игры
+  status: pass
+
+- summary: |
+    Функция Time control позволяет поставить минимальный таймер 3 минуты
+  status: pass
+
+- summary: |
+    Функция Time control позволяет поставить максимальный таймер 60 минут
+  status: pass
+
+- summary: |
+    В окне настройки игры (Create a game), функция Choose task by name or tags позволяет выбрать задачу через name
+  status: pass
+
+- summary: |
+    В окне настройки игры (Create a game), функция Choose task by name or tags позволяет выбрать задачу через tags
+  status: pass
+
+- summary: |
+    Создание турниров
+  status: pass
+
+- summary: |
+    Подключение к турниру через страницу определённого турнира
+  status: pass
+
+- summary: |
+    Таблица рейтинга игроков за неделю
+  status: pass
+
+- summary: |
+    Таблица рейтинга игроков за месяц
+  status: pass
+
+- summary: |
+    Таблица рейтинга игроков за всё время
+  status: pass
+
+- summary: |
+    Свободное перемещение между временными отрезками в LEADERBOAD
+  status: pass
+
+- summary: |
+    Через LEADERBOAD можно попасть на профиль игрока
+  status: pass
+
+- summary: |   
+    В LEADERBOAD указаны набранные очки за неделю
+  status: pass
+
+- summary: |   
+    В LEADERBOAD указаны набранные очки за месяц
+  status: pass
+
+- summary: |   
+    В LEADERBOAD указаны набраные очки за все время
+  status: pass
+
+- summary: |
+    Через LEADERBOAD можно попасть на страницу "Users rating"
+  status: pass
+
+- summary: |
+    Переход на страницу профиля игрока
+  status: pass
+
+- summary: |
+    Переход на страницу настройки сайта
+  status: pass
+
+- summary: |
+    Переход на страницу рейтинга игроков
+  status: pass
+
+- summary: |
+    Переход на страницу задач для битвы
+  status: pass
+
+- summary: |
+    Переход на страницу турниров
+  status: pass
+
+- summary: |
+    Переход на страницу GitHub проекта CodeBattle
+  status: pass
+
+- summary: |
+    Переход на страницу Hexlet
+  status: pass
+
+- summary: |
+    Присоединение к Discord каналу CodeBattle через веб-страницу
+  status: pass
+
+- summary: |
+    Присоединение к Discord каналу CodeBattle через приложение Discord
+  status: pass
+
+- summary: |
+    Присоединение к Telegram каналу Хекслета через веб-страницу
+  status: pass
+
+- summary: |
+    Присоединение к Telegram каналу Хекслета через приложение
+  status: pass
+
+- summary: |
+    Выйти из аккаунта
+  status: pass
+
+- summary: |
+    Чат присутствует на главной странице
+  status: pass
+
+- summary: |
+    Отправка сообщения в чате
+  status: pass
+
+- summary: |
+    В чате указывается количество игроков в онлайне
+  status: pass
+
+- summary: |
+    Под счётчиком пользователя находится список "Watching:"
+  status: pass
+
+- summary: |
+    Под счётчиком пользователя находится список "Playing:"
+  status: pass
+
+- summary: |
+    Под счётчиком пользователя находится список "Lobby:"
+  status: pass
+
+- summary: |
+    Чат находится в режиме "General"
+  status: pass
+
+- summary: |
+    Чат находится в режиме "Notification"
+  status: pass
+
+- summary: |
+    У обоих игроков представлены две консоли
+  status: pass
+
+- summary: |
+    В левой части экрана битвы представлена задача для битвы
+  status: pass
+
+- summary: |
+    Во вкладке Task можно выбрать русский язык для задачи
+  status: pass
+
+- summary: |
+    Во вкладке Task можно выбрать английский язык для задачи
+  status: pass
+
+- summary: |
+    На экране битвы можно запустить гайд
+  status: pass
+
+- summary: |
+    Над консолю указан язык программирования
+  status: pass
+
+- summary: |
+    Во время битвы можно изменить язык программирования
+  status: pass
+
+- summary: |
+    Сдаться во время битвы
+  status: pass
+
+- summary: |
+    Сброс редактора к первоначальному состоянию консоли
+  status: pass
+
+- summary: |
+    Успешная проверка задачи битвы
+  status: pass
+
+- summary: |
+    Неправильный ответ на задачу битвы
+  status: pass
+
+- summary: |
+    Переиграть битву с тем же игроком
+  status: pass
+
+- summary: |
+    Вернуться из страницы битвы на страницу авторизованного пользователя
+  status: pass
+
+- summary: |
+    Таймер битвы расположен справа от влкадки OUTPUT
+  status: pass
+  
