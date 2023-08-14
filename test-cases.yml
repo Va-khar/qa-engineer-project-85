@@ -33,6 +33,24 @@
     Под каждым полем появиться соответствующий предупреждение ".... required"
 
 - summary: |
+    Регистрация никнейма с использованием специфичных символов
+  requirement: |
+    При использовании специфичных символов, выводится предупреждение под полем Nickname
+  prerequirement: |
+    https://codebattle.hexlet.io/users/new?locale=en&next=%2F
+  test-data: |
+    Тестовые данные:
+        Nickname: f=*123+
+        Email: testarkhip@yandex.ru
+        Password: testpassword
+  steps:
+    - Вводим Nickname
+    - Вводим остальные тестовые данные
+    - Нажимаем на Submit
+  expected-result: |
+    Под полем Nickname выводится предупреждение 
+        
+- summary: |
     Регистрация никнейма с использованием нелатинских букв
   requirement: |
     При вводе нелатинских букв, под полем Nickname появляется предупреждение 
