@@ -27,6 +27,10 @@
   status: pass
 
 - summary: |
+    Регистрация несуществующего e-mail
+  status: fail
+
+- summary: |
     Во время регистрации в первое поле Password вводим меньше 6 символов
   status: pass
 
