@@ -106,6 +106,22 @@
     Под полем Email появляется предупреждение "Invalid email"
 
 - summary: |
+    Регистрация несуществующего e-mail 
+  requirement: |
+    При регистрации несуществующего e-mail выводится предупреждение 
+  prerequirement: |
+    Открыта страница регистрации https://codebattle.hexlet.io/users/new?locale=en&next=%2F
+  test-data: |
+    Тестовые данные: 
+      nickname: Testarkhip
+      email: testvakhninfail@gmail.com
+      password: testpassword
+  steps:
+    - Водим тестовые данные в поля регистрации
+  expected-result: |
+    Выводится предупреждение о несуществуещем e-mail
+
+- summary: |
     Во время регистрации в первое поле Password вводим меньше 6 символов
   requirement: |
     Вводим не больше 5 символов в первое поле Password, появляется предупреждение
