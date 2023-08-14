@@ -93,7 +93,7 @@
 - summary: |
     Регистрация некорректного e-mail
   requirement: |
-    При вводе некорректного e-mail выводится предупреждение
+    При вводе некорректного e-mail выводится предупреждение (корректый e-mail test@gmail.com)
   prerequisites: |
     Открыта страница регистрации https://codebattle.hexlet.io/users/new?locale=en&next=%2F
   test-data: |
