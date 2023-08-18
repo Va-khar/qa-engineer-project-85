@@ -106,6 +106,8 @@
     Password: passwordtest
   steps:
     - Вводим никнейм в поле Nickname
+    - Вводим email
+    - Вводим password
     - Нажимаем на кнопку "Submit"
   expected-result: |
     Под полем Nickname появляется предупреждение "Nickname is already taken"
@@ -122,7 +124,9 @@
     Email: testarkhip@yandexru
     Password: passwordtest
   steps: 
+    - Вводим nickname
     - Вводим в поле Email любой некорректный e-mail
+    - passwordtest
     - Нажимаем на кнопку "Submit"
   expected-result: |
     Под полем Email появляется предупреждение "Invalid email"
@@ -154,6 +158,8 @@
     Email: testarkhip@yandex.ru
     Password: passt
   steps:
+    - Вводим nickname
+    - Вводим Email
     - Вводим 5 символов в первое поле Password
     - Нажимаем на кнопку "Submit"
   expected-result: |
@@ -170,26 +176,32 @@
     Email: testarkhip@yandex.ru
     Password: testpasswordtesty
   steps: 
+    - Вводим nickname
+    - Вводим Email
     - Вводим 17 символов в первое поле Password
     - Нажимаем на кнопку "Submit"
   expected-result: |
     Под первым полем Password появляется предупреждение "Should be from 6 to 16 characters"
 
 - summary: |
-    Успешная проверка поля Password, во время регистрации
+    Несоответствие первого поля Password к второму полю Password, во время Регистрации
   requirement: |
     Второе поле Password проверяет на точность первое поле Password
   prerequisites: |
     Открыта страница регистрации https://codebattle.hexlet.io/users/new?locale=en&next=%2F
   test-data: |
-    1 Пароль: testpassword
-    2 Пароль: testpassword
+    Nickname: testarkhip
+    Email: testarkhip@yandex.ru
+    1 Password: testpassword
+    2 Password: testpasswordtest
   steps:
-    - Вводим 1 пароль в первое поле Password
-    - Вводим 2 пароль во второе поле Password
+    - Вводим nickname
+    - Вводим Email
+    - Вводим 1 password в первое поле Password
+    - Вводим 2 password во второе поле Password
     - Нажимаем на кнопку "Submit"
   expected-result: |
-    Предупреждение "Passwords must match" не появляется, регистрация успешна
+    Предупреждение "Passwords must match" появляется под вторым полем Password
 
 - summary: |
     Выявление на несоответствие пароля, во время регистрации
