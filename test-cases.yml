@@ -102,6 +102,8 @@
   test-data: |
     Тестовые данные:
     Никнейм: testarkhip
+    Email: testarkhip@yandex.ru
+    Password: passwordtest
   steps:
     - Вводим никнейм в поле Nickname
     - Нажимаем на кнопку "Submit"
