@@ -43,10 +43,6 @@
   status: pass
 
 - summary: |
-    Успешная проверка поля Password, во время регистрации
-  status: pass
-
-- summary: |
     Выявление на несоответствие пароля, во время регистрации
   status: pass
 
