@@ -184,26 +184,6 @@
     Под первым полем Password появляется предупреждение "Should be from 6 to 16 characters"
 
 - summary: |
-    Несоответствие первого поля Password к второму полю Password, во время Регистрации
-  requirement: |
-    Второе поле Password проверяет на точность первое поле Password
-  prerequisites: |
-    Открыта страница регистрации https://codebattle.hexlet.io/users/new?locale=en&next=%2F
-  test-data: |
-    Nickname: testarkhip
-    Email: testarkhip@yandex.ru
-    1 Password: testpassword
-    2 Password: testpasswordtest
-  steps:
-    - Вводим nickname
-    - Вводим Email
-    - Вводим 1 password в первое поле Password
-    - Вводим 2 password во второе поле Password
-    - Нажимаем на кнопку "Submit"
-  expected-result: |
-    Предупреждение "Passwords must match" появляется под вторым полем Password
-
-- summary: |
     Выявление на несоответствие пароля, во время регистрации
   requirement: |
     При нахождении неточности в пароле, появляется предупреждение
