@@ -33,7 +33,7 @@
     Под каждым полем появиться соответствующий предупреждение ".... required"
 
 - summary: |
-    Регистрация никнейма с использованием специфичных символов
+    Невозможность регистрация никнейма с использованием специфичных символов
   requirement: |
     При использовании специфичных символов, выводится предупреждение под полем Nickname
   prerequisites: |
@@ -51,7 +51,7 @@
     Под полем Nickname выводится предупреждение 
         
 - summary: |
-    Регистрация никнейма с использованием нелатинских букв
+    Невозможность регистрация никнейма с использованием нелатинских букв
   requirement: |
     При вводе нелатинских букв, под полем Nickname появляется предупреждение 
   prerequisites: |
@@ -66,29 +66,35 @@
     Под полем Nickname появляется предупреждение "Can contain letters, numbers and underscores and should begin with a Latin letter"
 
 - summary: | 
-    Во время регистрации в поле Nickname меньше 3 символов 
+    Невозможность регистрации в поле Nickname меньше 3 символов 
   requirement: |
     Вводим не больше 2 символов в поле Nickname, появляется предупреждение
   prerequisites: |
     Открыта страница регистрации https://codebattle.hexlet.io/users/new?locale=en&next=%2F
   test-data: |
-    Тестовых данных нет
+    Тестовые данные:
+      Nickname: tn
+      Email: testarkhip@yandex.ru
+      Password: testpassword
   steps:
-    - Вводим 2 символа в поле Nickname
+    - Вводим тестовые данные
     - Нажимаем на кнопку "Submit"
   expected-result: |
     Под полем Nickname появляется предупреждение "Should be from 3 to 16 characters"
 
 - summary: |
-    Во время регистрации в поле Nickname больше 16 символов
+    Невозможность регистрации в поле Nickname больше 16 символов
   requirement: |
     Вводим не меньше 17 символов в поле Nickname, появляется предупреждение
   prerequisites: |
     Открыта страница регистрации https://codebattle.hexlet.io/users/new?locale=en&next=%2F
   test-data: |
-    Тестовых данных нет
+    Тестовые данные:
+      Nickname: testarkhiptestfai
+      Email: testarkhip@yandex.ru
+      Password: testpassword
   steps:
-    - Вводим 17 символов в поле Nickname
+    - Вводим тестовые данные
     - Нажимаем на кнопку "Submit"
   expected-result: |
     Под полем Nickname появляется предупреждение "Should be from 3 to 16 characters"
