@@ -36,7 +36,7 @@
     Регистрация никнейма с использованием специфичных символов
   requirement: |
     При использовании специфичных символов, выводится предупреждение под полем Nickname
-  prerequirement: |
+  prerequisites: |
     https://codebattle.hexlet.io/users/new?locale=en&next=%2F
   test-data: |
     Тестовые данные:
@@ -67,7 +67,7 @@
 
 - summary: | 
     Во время регистрации в поле Nickname меньше 3 символов 
-  requisites: |
+  requirement: |
     Вводим не больше 2 символов в поле Nickname, появляется предупреждение
   prerequisites: |
     Открыта страница регистрации https://codebattle.hexlet.io/users/new?locale=en&next=%2F
@@ -81,7 +81,7 @@
 
 - summary: |
     Во время регистрации в поле Nickname больше 16 символов
-  requisites: |
+  requirement: |
     Вводим не меньше 17 символов в поле Nickname, появляется предупреждение
   prerequisites: |
     Открыта страница регистрации https://codebattle.hexlet.io/users/new?locale=en&next=%2F
@@ -135,7 +135,7 @@
     Регистрация несуществующего e-mail 
   requirement: |
     При регистрации несуществующего e-mail выводится предупреждение 
-  prerequirement: |
+  prerequisites: |
     Открыта страница регистрации https://codebattle.hexlet.io/users/new?locale=en&next=%2F
   test-data: |
     Тестовые данные: 
@@ -513,7 +513,7 @@
     Статус Title указывает название завершенного турнира
   requirement: |
     Во вкладке Tournaments, под заголовком "Completed tournaments", статус Title указывает название завершенного турнира
-  prerequirement: |
+  prerequisites: |
     Открыта страница турниров https://codebattle.hexlet.io/#tournaments
   test-data: |
     Тестовых данных нет
@@ -527,7 +527,7 @@
     Статус Type указывает на тип завершенного турнира
   requirement: |
     Во вкладке Tournaments, под заголовком "Completed tournaments", статус Type указывает на тип соревнования завершенного турнира
-  prerequirement: |
+  prerequisites: |
     Открыта страница турниров https://codebattle.hexlet.io/#tournaments
   test-data: |
     Тестовых данных нет
@@ -541,7 +541,7 @@
     Статус Starts_at указывает дату начала завершенного турнира
   requirement: |
     Во вкладке Tournaments, под заголовком "Completed tournaments", статус Starts_at указывает дату начала завершенного турнира
-  prerequirement: |
+  prerequisites: |
     Открыта страница турниров https://codebattle.hexlet.io/#tournaments
   test-data: |
     Тестовых данных нет
@@ -555,7 +555,7 @@
     Статус Creator указывает имя создателя завершенного турнира
   requirement: |
     Во вкладке Tournaments, под заголовком "Completed tournaments", статус Creator указывает имя создателя завершенного турнира
-  prerequirement: |
+  prerequisites: |
     Открыта страница турниров https://codebattle.hexlet.io/#tournaments
   test-data: |
     Тестовых данных нет
@@ -569,7 +569,7 @@
     Статус Actions указывает, в качестве кого можно присоединиться к завершенному турниру
   requirement: |
     Во вкладке Tournaments, под заголовком "Completed tournaments", статус Actions указывает в качестве кого можно присоединиться к завершенному турниру
-  prerequirement: |
+  prerequisites: |
     Открыта страница турниров https://codebattle.hexlet.io/#tournaments
   test-data: |
     Тестовых данных нет
@@ -650,7 +650,7 @@
     Статус Type  указывает на формат проведения активного турнира
   requirement: |
     Во вкладке Tournaments, под заголовком "Live tournaments", статус Type указывает на формат проведения активного турнира
-  prerequirement: |
+  prerequisites: |
     Открыта страница турниров https://codebattle.hexlet.io/#tournaments
   test-data: |
     Тестовых данных нет
@@ -818,7 +818,7 @@
     Базовый функционал окна настройки (Create a game)
   requirement: |
     В окне настройки игры (Create a game) представлен базовый функционал: Level, Game Type, Time control, Choose task by name or tags
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
@@ -832,7 +832,7 @@
     В окне настройки игры (Create a game), функция Level позволяет выбрать уровень сложности 
   requirement: |
     Функция Level позволяет выбрать один из четырёх уровней сложности игры
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
@@ -848,7 +848,7 @@
     В окне настройки игры (Create a game), функция Game Type позволяет выбрать игру с ботом
   requirement: |
     Функция Game Type  позволяет выбрать игру с ботом
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
@@ -864,7 +864,7 @@
     В окне настройки игры (Create a game), функция Game Type позволяет выбрать определённого игрока
   requirement: |
     Функция Game Type  позволяет выбрать определённого игрока с помощью приглашения
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
@@ -882,7 +882,7 @@
     В окне настройки игры (Create a game), функция Game Type позволяет выбрать игру со случайным игроком
   requirement: |
     Функция Game Type  позволяет выбрать игру со сучайным игроком
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
@@ -898,7 +898,7 @@
     В окне настройки игры (Create a game), функция Time control позволяет поставить таймер игры
   requirement: |
     Функция Time control позволяет настроить временное ограничение битвы 
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
@@ -915,7 +915,7 @@
     Функция Time control позволяет поставить минимальный таймер 3 минуты
   requirement: |
     При выборе Time control в 3 минуты, временное ограничение битвы будет равна 3 минутам
-  prerequirement: | 
+  prerequisites: | 
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
@@ -932,7 +932,7 @@
     Функция Time control позволяет поставить максимальный таймер 60 минут
   requirement: |
     При выборе Time control в 60 минут, временное ограничение битвы будет равна 60 минут
-  prerequirement: | 
+  prerequisites: | 
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
@@ -949,7 +949,7 @@
     В окне настройки игры (Create a game), функция Choose task by name or tags позволяет выбрать задачу через name
   requirement: |
     Функция Choose task by name or tags позволяет выбрать определённую задачу для игры через name
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
@@ -966,7 +966,7 @@
     В окне настройки игры (Create a game), функция Choose task by name or tags позволяет выбрать задачу через tags
   requirement: |
     Функция Choose task by name or tags позволяет выбрать диапазон задач для игры через tags
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
@@ -985,7 +985,7 @@
     Создание турниров 
   requirement: |
     Авторизованный пользователь может создавать турниры
-  prerequirement: |
+  prerequisites: |
     Открытая страница турниров https://codebattle.hexlet.io/#tournaments
   test-data: |
     Тестовых данных нет
@@ -1000,7 +1000,7 @@
     Подключение к турниру через страницу определённого турнира
   requirement: |
     Находясь на странице определённого турнира можно подключиться к нему через кнопку "Join"
-  prerequirement: |
+  prerequisites: |
     Открытая страница турниров https://codebattle.hexlet.io/#tournaments
   test-data: |
     Тестовых данных нет
@@ -1017,7 +1017,7 @@
     Таблица рейтинга игроков за неделю
   requirement: |
     Таблица рейтинга игроков за неделю находится в правой части страницы авторизованного пользователя
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
@@ -1030,7 +1030,7 @@
     Таблица рейтинга игроков за месяц
   requirement: |
     Таблица рейтинга игроков за месяц находится в правой части страницы авторизованного пользователя
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
@@ -1044,7 +1044,7 @@
     Таблица рейтинга игроков за всё время
   requirement: |
     Таблица рейтинга игроков за всё время находится в правой части страницы авторизованного пользователя
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
@@ -1058,7 +1058,7 @@
     Свободное перемещение между временными отрезками в LEADERBOAD
   requirement: |
     Пользователь может свободно перемещаться между временными отрезка в таблице LEADERBOAD
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
@@ -1074,7 +1074,7 @@
     Через LEADERBOAD можно попасть на профиль игрока
   requirement: | 
     Кликая на имя игрока в LEADERBOAD, перемещаешься в профиль игрока
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
@@ -1088,7 +1088,7 @@
     В LEADERBOAD указаны набранные очки за неделю 
   requirement: |   
     В LEADERBOAD указаны набранные очки за неделю у каждого пользователя  
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
@@ -1102,7 +1102,7 @@
     В LEADERBOAD указаны набранные очки за месяц
   requirement: |   
     В LEADERBOAD указаны набраные очки за месяц у каждого пользователя  
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
@@ -1117,7 +1117,7 @@
     В LEADERBOAD указаны набраные очки за все время
   requirement: |   
     В LEADERBOAD указаны набраные очки за все время у каждого пользователя  
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
@@ -1132,7 +1132,7 @@
     Через LEADERBOAD можно попасть на страницу "Users rating"
   requirement: |
     Нажав на "TOP list" в таблице LEADERBOAD, пользоваель перейдёт на страницу "Users rating"
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
@@ -1146,7 +1146,7 @@
     Переход на страницу профиля игрока 
   requirement: |
     Нажимая на имя пользователя в правом верхнем углу, открывается окно, где есть кнопка My Profile для перехода на страницу профиля
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
@@ -1162,7 +1162,7 @@
     Переход на страницу настройки сайта
   requirement: |
     Нажимая на имя пользователя в правом верхнем углу, открывается окно, где есть кнопка Settings для перехода на страницу настройки сайта
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
@@ -1178,7 +1178,7 @@
     Переход на страницу рейтинга игроков 
   requirement: |
     Нажимая на имя пользователя в правом верхнем углу, открывается окно, где есть кнопка Users rating для перехода на страницу рейтинга игроков
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
@@ -1194,7 +1194,7 @@
     Переход на страницу задач для битвы
   requirement: |
     Нажимая на имя пользователя в правом верхнем углу, открывается окно, где есть кнопка Tasks для перехода на страницу задач для игр
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
@@ -1210,7 +1210,7 @@
     Переход на страницу турниров
   requirement: |
     Нажимая на имя пользователя в правом верхнем углу, открывается окно, где есть кнопка Tournaments для перехода на страницу турниров
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
@@ -1226,7 +1226,7 @@
     Переход на страницу GitHub проекта CodeBattle
   requirement: |
     Нажимая на имя пользователя в правом верхнем углу, открывается окно, где есть кнопка SourceCode для перехода на страницу Github проекта CodeBattle
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
@@ -1242,7 +1242,7 @@
     Переход на страницу Hexlet
   requirement: |
     Нажимая на имя пользователя в правом верхнем углу, открывается окно, где есть кнопка Hexlet для перехода на страницу Hexlet 
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
@@ -1258,7 +1258,7 @@
     Присоединение к Discord каналу CodeBattle через веб-страницу
   requirement: |
     Нажимая на имя пользователя в правом верхнем углу, открывается окно, где есть кнопка Jion Discord для присоединения к Discord каналу CodeBattle
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
@@ -1275,7 +1275,7 @@
     Присоединение к Discord каналу CodeBattle через приложение Discord
   requirement: |
     Нажимая на имя пользователя в правом верхнем углу, открывается окно, где есть кнопка Jion Discord для присоединения к Discord каналу CodeBattle
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
@@ -1292,7 +1292,7 @@
     Присоединение к Telegram каналу Хекслета через веб-страницу
   requirement: |
     Нажимая на имя пользователя в правом верхнем углу, открывается окно, где есть кнопка Tg#codebattle для присоединения к Telegram каналу Хекслета
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
@@ -1310,7 +1310,7 @@
     Присоединение к Telegram каналу Хекслета через приложение
   requirement: |
     Нажимая на имя пользователя в правом верхнем углу, открывается окно, где есть кнопка Tg#codebattle для присоединения к Telegram каналу Хекслета
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
@@ -1328,7 +1328,7 @@
     Выйти из аккаунта
   requirement: |
     Нажимая на имя пользователя в правом верхнем углу, открывается окно, где есть кнопка Sign Out для выхода из аккаунта
-  prerequiremet: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
@@ -1343,7 +1343,7 @@
     Чат присутствует на главной странице
   requirement: |
     Чат присутствует на главной странице авторизованного пользователя
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
@@ -1356,7 +1356,7 @@
     Отправка сообщения в чате
   requirement: |
     При отправке, сообщение опубликуется на стене чата
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовое сообщение: "Hello World!" 
@@ -1370,7 +1370,7 @@
     В чате указывается количество игроков в онлайне
   requirement: |
     В верхней правой части чата отображается счётчик пользователей "Online players"
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
@@ -1383,7 +1383,7 @@
     Под счётчиком пользователя находится список "Watching:"
   requirement: |
     Список "Watching" указывает поимённо игроков смотрящих активную игру
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
@@ -1396,7 +1396,7 @@
     Под счётчиком пользователя находится список "Playing:"
   requirement: |
     Список "Playing" указывает поимённо игроков играющих активную игру
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
@@ -1409,7 +1409,7 @@
     Под счётчиком пользователя находится список "Lobby:"
   requirement: |
     Список "Lobby:" указывает поимённо игроков находящийся в лобби
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
@@ -1422,7 +1422,7 @@
     Чат находится в режиме "General"
   requirement: |
     На плашке отображено "General", сама плашка находится над стеной чата
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
@@ -1436,7 +1436,7 @@
     Чат находится в режиме "Notification"
   requirement: |
     На плашке отображено "Notification", сама плашка находится над стеной чата
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
@@ -1451,7 +1451,7 @@
     У обоих игроков представлены две консоли
   requirement: |
     Экран битвы разделён на две части, слева консоль игрока, справа консоль оппонента игрока  
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Параметры битвы:
@@ -1471,7 +1471,7 @@
     В левой части экрана битвы представлена задача для битвы
   requirement: |
     В левой части экрана над консолю представлена задача для битвы
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Параметры битвы:
@@ -1491,7 +1491,7 @@
     Во вкладке Task можно выбрать русский язык для задачи 
   requirement: |
     В правой части вкладки Task можно выбрать русский язык для задачи
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Параметры битвы:
@@ -1512,7 +1512,7 @@
     Во вкладке Task можно выбрать английский язык для задачи 
   requirement: |
     В правой части вкладки Task можно выбрать английский язык для задачи
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Параметры битвы:
@@ -1535,7 +1535,7 @@
     На экране битвы можно запустить гайд
   requirement: |
     В правой части вкладки Task можно запустить гайд из восьми шагов по функционалу битвы
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Параметры битвы:
@@ -1556,7 +1556,7 @@
     Над консолю указан язык программирования 
   requirement: |
     Над консолю указан язык программирования текущей битвы
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Параметры битвы:
@@ -1576,7 +1576,7 @@
     Во время битвы можно изменить язык программирования 
   requirement: |
     Над левой консолю указан язык программирования, через него можно выбрать другой язык программирования 
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Параметры битвы:
@@ -1599,7 +1599,7 @@
     Сдаться во время битвы 
   requirement: |
     Справа над консолью находится красный значок с флагом для признания поражения в игре
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Параметры битвы:
@@ -1622,7 +1622,7 @@
     Сброс редактора к первоначальному состоянию консоли
   requirement: |
     Справа над консолю находится синий значок для сброса редактора к первоначальным настройкам
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Параметры битвы:
@@ -1644,7 +1644,7 @@
     Успешная проверка задачи битвы
   requirement: |
     Справа над консолю находится зелёный значок для проверки решения предложенной задачи 
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Параметры битвы:
@@ -1675,7 +1675,7 @@
     Неправильный ответ на задачу битвы 
   requirement: |
     Справа над консолю находится зелёный значок для проверки решения предложенной задачи
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Параметры битвы:
@@ -1696,7 +1696,7 @@
     Переиграть битву с тем же игроком 
   requirement: |
     В правой части экрана можно нажать на конпку "Rematch" для переигровки битвы со случайно задачи 
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Параметры битвы:
@@ -1718,7 +1718,7 @@
     Вернуться из страницы битвы на страницу авторизованного пользователя 
   requirement: |
     В правой части экрана можно нажать на кнопку "Back to Home" для возвращения на страницу авторизованного пользователя
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Параметры битвы:
@@ -1739,7 +1739,7 @@
     Таймер битвы расположен справа от влкадки OUTPUT 
   requirement: |
     Счётчик битвы находится справа от вкладки OUTPUT
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Параметры битвы:
@@ -1759,7 +1759,7 @@
     Успешное изменение никнейма 
   requirement: |
     В настройках можно изменить никнейм пользователя
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Старый никнейм: Va-khar
@@ -1778,7 +1778,7 @@
     Изменение никнейма на "пустые знаки"
   requirement: |
     При изменении никнейма на "пустые знаки", появляется предупреждение о некорректном никнейме
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Старый никнейм: Va-khar
@@ -1797,7 +1797,7 @@
     Изменение никнейма на нелатинские знаки 
   requirement: |
     При изменении никнейма на нелатинские символы, появляется предупреждение о некорректном никнейме
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Старый никнейм: Va-khar
@@ -1816,7 +1816,7 @@
     Изменение никнейма на ничего (пустое поле)
   requirement: |
     При изменении никнейма на ничего (пустое поле), появляется предупреждение о некорректном никнейме
-  prerequirement: |
+  prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Старый никнейм: Va-khar
