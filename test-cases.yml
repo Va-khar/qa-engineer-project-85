@@ -435,9 +435,9 @@
     Вкладки со статусами представлены соответствует формате таблицы
 
 - summary: |
-    Во вкладке Lobby предоставлена информация о статусе игр 
+    Во вкладке Lobby предоставлена информация о параметрах игры
   requirement: |
-    В данной вкладке указаны статусы: Level, State, Players, Actions 
+    В данной вкладке указаны параметры: Level, State, Players, Actions 
   prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
@@ -448,56 +448,69 @@
     Вся информация о игре в статусах предоставлена 
 
 - summary: |
-    Статус Level указывает уровень сложности игры
+    Параметр Level указывает уровень сложности игры
   requirement: |
-    В Lobby, в статусе Level указан один из четырёх уровень сложности игры
+    В Lobby, параметр Level указан один из четырёх уровень сложности игры
   prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
   steps:
-    - Смотрим на статус Level
+    - Смотрим на параметр Level
   expected-result: |
     Указан уровень сложности игры
 
 - summary: |
-    Статус State указывает статус игрока в игре 
+    Параметр State указывает на статус игры 
   requirement: |
-    В Lobby, статусе State указано, в каком состоянии сам игрок
+    В Lobby, параметр State указывает на статус игры
   prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
   steps:
-    - Смотрим на статус State
+    - Смотрим на параметр State
   expected-result: |
-    Указан статус игрока
+    Указан статус игры
 
 - summary: |
-    Статус Players указывает имя игрока
+    Параметр Players указывает имя игрока
   requirement: |
-    В Lobby, статусе Players указано имя игрока 
+    В Lobby, параметр Players указывает на имя игрока 
   prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby 
   test-data: |
     Тестовых данных нет
   steps: 
-    - Смотрим статус Players
+    - Смотрим параметр Players
   expected-result: |
     Указано имя игрока 
 
 - summary: |
-    Статус Actions указывает состояние игры
+    Параметр Actions может указывает на состояние игры "Fight"
   requirement: |
-    В Lobby, статус Actions указывает на состояние игры
+    В Lobby, параметр Actions указывает на состояние игры
   prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
     Тестовых данных нет
   steps: 
-    - Смотрим статус Actions
+    - Смотрим на параметр Actions
   expected-result: |
-    Видим статус игры
+    Видим "Fight"
+
+- summary: |
+    Параметр Actions может указывает на состояние игры "Show"
+  requirement: |
+    В Lobby, параметр Actions указывает на состояние игры
+  prerequisites: |
+    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
+  test-data: |
+    Тестовых данных нет
+  steps: 
+    - Смотрим на параметр Actions
+  expected-result: |
+    Видим "Show"
 
 - summary: |
     Через статус Players можно попасть в профиль игрока
