@@ -3,9 +3,21 @@
   status: pass
 
 - summary: |
-    Невозможность регистрации с пустыми полями
+    Невозможность регистрации с пустыми полем Nickname
   status: pass
 
+- summary: |
+    Невозможность регистрации с пустым полем Email
+  status: pass
+
+- summary: |
+    Невозможность регистрации с пустым полем Password
+  status: pass
+
+- summary: |
+    Невозможность регистрации с пустым полем Password Confirmation
+  statsus: pass
+  
 - summary: |
     Невозможность регистрация никнейма с использованием специфичных символов
   status: pass
