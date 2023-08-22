@@ -19,19 +19,57 @@
     Пользователь успешно зарегистрировался 
 
 - summary: |
-    Невозможность регистрации с пустыми полями
+    Невозможность регистрации с пустым полем Nickname
   requirement: |
     При нажатии на кнопку "Submit" появляется предупреждение
   prerequisites: | 
     Открыта страница регистрации https://codebattle.hexlet.io/users/new?locale=en&next=%2F
   test-data: |
-    Тестовые данные:
-    Данных нет
+    Тестовых данных нет
   steps: 
     - Нажимаем на кнопку "Submit"
   expected-result: |
-    Под каждым полем появиться соответствующий предупреждение ".... required"
+    Под полем Nickname появиться предупреждение "Nickname required"
 
+- summary: |
+    Невозможность регистрации с пустым полем Email
+  requirement: |
+    При нажатии на кнопку "Submit" появляется предупреждение
+  prerequisites: | 
+    Открыта страница регистрации https://codebattle.hexlet.io/users/new?locale=en&next=%2F
+  test-data: |
+    Тестовых данных нет
+  steps: 
+    - Нажимаем на кнопку "Submit"
+  expected-result: |
+    Под полем Email появиться предупреждение "Email required"
+
+- summary: |
+    Невозможность регистрации с пустым полем Password
+  requirement: |
+    При нажатии на кнопку "Submit" появляется предупреждение
+  prerequisites: | 
+    Открыта страница регистрации https://codebattle.hexlet.io/users/new?locale=en&next=%2F
+  test-data: |
+    Тестовых данных нет
+  steps: 
+    - Нажимаем на кнопку "Submit"
+  expected-result: |
+    Под полем Password появиться предупреждение "Password required"
+
+- summary: |
+    Невозможность регистрации с пустым полем Password Confirmation
+  requirement: |
+    При нажатии на кнопку "Submit" появляется предупреждение
+  prerequisites: | 
+    Открыта страница регистрации https://codebattle.hexlet.io/users/new?locale=en&next=%2F
+  test-data: |
+    Тестовых данных нет
+  steps: 
+    - Нажимаем на кнопку "Submit"
+  expected-result: |
+    Под полем Password Confirmation появиться предупреждение "Password Confirmation required"
+    
 - summary: |
     Невозможность регистрация никнейма с использованием специфичных символов
   requirement: |
