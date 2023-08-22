@@ -258,6 +258,14 @@
   status: pass
 
 - summary: |
+    Принятие приглашение на битву
+  status: pass
+
+- summary: |
+    Отклонить приглашение на битву
+  status: pass
+
+- summary: |
     В окне настройки игры (Create a game), функция Game Type позволяет выбрать игру со случайным игроком
   status: pass
 
