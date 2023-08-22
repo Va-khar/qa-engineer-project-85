@@ -241,7 +241,7 @@
     Успешная авторизация пользователя через GitHub
   requirement: |
     При нажатии на кнопку "Sign in with Github" происходит успешная авторизация
-  prerequisutes: |
+  prerequisites: |
     Открыта страница авторизации https://codebattle.hexlet.io/session/new?locale=en&next=%2F
   test-data: |
     Тестовые данные:
@@ -257,7 +257,7 @@
     Успешная авторизация пользователя через Discord
   requirement: |
     При нажатии на кнопку "Sign in with Discord" происходит успешная авторизация
-  prerequisutes: |
+  prerequisites: |
     Открыта страница авторизации https://codebattle.hexlet.io/session/new?locale=en&next=%2F
   test-data: |
     Тестовые данные:
@@ -273,7 +273,7 @@
     Авторизация с несуществующим e-mail 
   requirement: |
     При авторизации с несуществующим e-mail, пользователь не проходит авторизацию
-  prerequisutes: |
+  prerequisites: |
     Открыта страница авторизации https://codebattle.hexlet.io/session/new?locale=en&next=%2F
   test-data: |
     Тестовые данные:
@@ -290,7 +290,7 @@
     Авторизация с неправильным паролем
   requirement: |
     При авторизации с неправильным паролем, пользователь не проходит авторизацию
-  prerequisutes: |
+  prerequisites: |
     Открыта страница авторизации https://codebattle.hexlet.io/session/new?locale=en&next=%2F
   test-data: |
     Тестовые данные:
@@ -307,7 +307,7 @@
     Авторизация с пустыми полями
   requirement: |
     При нажатии на кнопку "Submit" появляется предупреждение
-  prerequisutes: |
+  prerequisites: |
     Открыта страница авторизации https://codebattle.hexlet.io/session/new?locale=en&next=%2F
   test-data: |
     Тестовых данных нет
@@ -831,7 +831,7 @@
   steps:
     - Нажимаем на кнопку "CREATE A GAME"
     - Смотрим на окно настройки (Create a game)
-  expected-data: |
+  expected-result: |
     Базовый функционал представлен в окне настройки 
 
 - summary: |
@@ -1145,7 +1145,7 @@
   steps:
     - Смотрим на LEADERBOAD 
     - Нажимаем на "TOP list"
-  expected-reuslt: |
+  expected-result: |
     Попадаем на страницу "Users rating"
 
 - summary: |
