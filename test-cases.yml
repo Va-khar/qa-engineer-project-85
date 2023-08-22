@@ -921,11 +921,15 @@
   prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
-    Тестовых данных нет
+    Тестовые данные:
+      Level: 1 уровень
+      Game Type: С ботом
+      Time Control: 30 мин
+      Choose task: rect_area
   steps:
     - Нажимаем на кнопку "CREATE A GAME"
     - Переходим в окно настройки
-    - Выбираем один из четырёх уровней сложности
+    - Вводим тестовые данные
     - Нажимаем на кнопку "Create Battle"
   expected-result: |
     Создаётся игра с выбранным уровнем сложности
@@ -937,11 +941,15 @@
   prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
-    Тестовых данных нет
+    Тестовые данные:
+      Level: 1 уровень
+      Game Type: With a bot
+      Time Control: 30 мин
+      Choose task: rect_area
   steps: 
     - Нажимаем на кнопку "CREATE A GAME"
     - Переходим в окно настройки 
-    - Выбираем "With a bot"
+    - Вводим тестовые данные
     - Нажимаем на кнопку "Create Battle"
   expected-result: |
     Игра сразу запускается 
@@ -953,16 +961,72 @@
   prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
-    Тестовых данных нет
+    Тестовые данные:
+      Level: 1 уровень
+      Game Type: With a friend
+      Time Control: 30 мин
+      Choose task: rect_area
   steps: 
     - Нажимаем на кнопку "CREATE A GAME"
     - Переходим в окно настройки 
-    - Выбираем "With a friend"
+    - Вводим тестовые данные
     - Появляется строчка Choose opponent
     - Выбираем игрока 
     - Нажимаем на кнопку "Create Battle"
   expected-result: |
-    Игра создана, ожидаем подтверждение от выбранного игрока
+    Игра создана, прглашение отправленно 
+
+- summary: |
+    Принятие приглашение на битву 
+  requirement: |
+    На иконке скрещенных мечей появляется значок о приглашение на битву
+  prerequisites: |
+    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
+  test-data: |
+     Тестовые данные:
+      Level: 1 уровень
+      Game Type: With a friend
+      Time Control: 30 мин
+      Choose task: rect_area
+  steps:
+    - Нажимаем на кнопку "CREATE A GAME"
+    - Переходим в окно настройки
+    - Вводим тестовые данные
+    - Появляется строчка Choose opponent
+    - Выбираем игрока
+    - Нажимаем на кнопку "Create Battle"
+    - У выбранного игрока появляется приглашение на скрещенных мечах
+    - Приглашённый игрок нажимает мечи
+    - Появляется окно
+    - Приглашённый игрок нажимает на Accept
+  expected-result: |
+    Оба игрока переходят на страницу в битвы 
+
+- summary: |
+    Отклонить приглашение на битву 
+  requirement: |
+    На иконке скрещенных мечей появляется значок о приглашение на битву
+  prerequisites: |
+    Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
+  test-data: |
+     Тестовые данные:
+      Level: 1 уровень
+      Game Type: With a friend
+      Time Control: 30 мин
+      Choose task: rect_area
+  steps:
+    - Нажимаем на кнопку "CREATE A GAME"
+    - Переходим в окно настройки
+    - Вводим тестовые данные
+    - Появляется строчка Choose opponent
+    - Выбираем игрока
+    - Нажимаем на кнопку "Create Battle"
+    - У выбранного игрока появляется приглашение на скрещенных мечах
+    - Приглашённый игрок нажимает мечи
+    - Появляется окно
+    - Приглашённый игрок нажимает на Decline
+  expected-result: |
+    Приглашение отклоняется, игроки остаются на своих страницах лобби
 
 - summary: |
     В окне настройки игры (Create a game), функция Game Type позволяет выбрать игру со случайным игроком
@@ -971,11 +1035,15 @@
   prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
-    Тестовых данных нет
+    Тестовые данные:
+      Level: 1 уровень
+      Game Type: With other users
+      Time Control: 30 мин
+      Choose task: rect_area
   steps: 
     - Нажимаем на кнопку "CREATE A GAME"
     - Переходим в окно настройки 
-    - Выбираем "With other users"
+    - Вводим тестовые данные
     - Нажимаем на кнопку "Create Battle"
   expected-result: |
     Игра создана и находится в Lobby для свободного подключения другими игроками  
@@ -987,12 +1055,15 @@
   prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
-    Тестовых данных нет
+    Тестовые данные:
+      Level: 1 уровень
+      Game Type: С ботом
+      Time Control: 30 мин
+      Choose task: rect_area
   steps: 
     - Нажимаем на кнопку "CREATE A GAME"
     - Переходим в окно настройки 
-    - Выбираем игру с ботом
-    - Ставим 30 мин
+    - Вводим тестовые данные
     - Нажимаем на кнопку "Create Battle"
   expected-result: |
     Переходим в саму битву и видим таймер идёт от 30 мин
@@ -1004,12 +1075,15 @@
   prerequisites: | 
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
-    Тестовых данных нет
+    Тестовые данные:
+      Level: 1 уровень
+      Game Type: С ботом
+      Time Control: 3 мин
+      Choose task: rect_area
   steps:
     - Нажимаем на кнопку "CREATE A GAME"
     - Переходим в окно настройки
-    - Выбираем игру с ботом
-    - Ставим таймер 3 минуты
+    - Вводим тестовые данные
     - Нажимаем на кнопку "Create Battle"
   expected-result: |
     Переходим в саму битву и видим таймер идёт от 3 минут
@@ -1021,12 +1095,15 @@
   prerequisites: | 
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
-    Тестовых данных нет
+    Тестовые данные:
+      Level: 1 уровень
+      Game Type: С ботом
+      Time Control: 60 мин
+      Choose task: rect_area
   steps:
     - Нажимаем на кнопку "CREATE A GAME"
     - Переходим в окно настройки
-    - Выбираем игру с ботом
-    - Ставим таймер 60 минут
+    - Вводим тестовые данные 
     - Нажимаем на кнопку "Create Battle"
   expected-result: |
     Переходим в саму битву и видим таймер идёт от 60 минут
@@ -1038,12 +1115,15 @@
   prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
-    Тестовых данных нет
+    Тестовые данные:
+      Level: 1 уровень
+      Game Type: С ботом
+      Time Control: 30 мин
+      Choose task: rect_area
   steps:
     - Нажимаем на кнопку "CREATE A GAME"
     - Переходим в окно настройки
-    - Выбираем игру с ботом
-    - Выбираем любую задачу через первое поле в функции Choose task by name or tags
+    - Вводим тестовые данные
     - Нажимаем на кнопку "Create Battle"
   expected-result: |
     Переходим в саму битву и видим выбранную задачу
@@ -1055,14 +1135,16 @@
   prerequisites: |
     Открыта страница авторизованного пользователя https://codebattle.hexlet.io/#lobby
   test-data: |
-    Тестовых данных нет
+    Тестовые данные:
+      Level: 1 уровень
+      Game Type: С ботом
+      Time Control: 30 мин
+      Tags: match, strings
   steps:
     - Нажимаем на кнопку "CREATE A GAME"
     - Переходим в окно настройки
-    - Выбираем игру с ботом
-    - Выбираем тэги во втором поле функции Choose task by name or tags
-    - Определяется диапазон задач
-    - Выбираем любую задачу
+    - Вводим тестовые данные
+    - В поле Choose task выбираем предложенную задачу random task
     - Нажимаем на кнопку "Create Battle"
   expected-result: |
     Переходим в саму битву и видим выбранную задачу
