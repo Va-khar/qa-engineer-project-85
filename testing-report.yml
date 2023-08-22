@@ -123,7 +123,11 @@
   status: pass
 
 - summary: |
-    Параметр Actions указывает состояние игры
+    Параметр Actions может указывает на состояние игры "Fight"
+  status: pass
+
+- summary: |
+    Параметр Actions может указывает на состояние игры "Show"
   status: pass
 
 - summary: |
